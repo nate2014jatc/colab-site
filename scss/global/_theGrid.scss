@@ -1,0 +1,73 @@
+//collumns are 65px wide with 20px gutters
+
+@mixin gridCalc($numCol, $numGutters) {
+  width: percentage((($numCol*65)+($numGutters*20))/1000);
+}
+
+.grid-container {
+  padding:0;
+  margin:0;
+
+  > [class^="grid-"] {
+    float: left;
+    min-height:1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 2%;
+
+    &:first-child {
+     margin-left: 0;
+    }
+    &:last-child {
+      float:right;
+    }
+  }
+
+}
+
+.grid-1 {
+  @include gridCalc(1,0);
+
+}
+.grid-2 {
+  @include gridCalc(2,1);
+
+}
+.grid-3 {
+  @include gridCalc(3,2);
+}
+.grid-4 {
+  @include gridCalc(4,3);
+}
+.grid-5 {
+  @include gridCalc(5,4);
+}
+.grid-6 {
+  @include gridCalc(6,5);
+}
+.grid-7 {
+  @include gridCalc(7,6);
+}
+.grid-8{
+  @include gridCalc(8,7);
+}
+.grid-9 {
+  @include gridCalc(9,8);
+}
+.grid-10 {
+  @include gridCalc(10,9);
+}
+.grid-11 {
+  @include gridCalc(11,10);
+}
+.grid-12 {
+  @include gridCalc(12,11);
+}
+
+//clearfix
+.group:after,
+.grid-container:after {
+  content:"";
+  clear:both;
+  display:table;
+}

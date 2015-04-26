@@ -1,0 +1,13 @@
+.missionSection {
+  h1 {
+    font-size:3rem;
+    color:$mainHeadingColor;
+  }
+}
+
+.missionLine {
+  border-bottom:1px solid $textColor;
+  width: 73%;
+  margin: auto;
+  margin-top: -24px;
+}

@@ -1,0 +1,19 @@
+//this imports all the styles from the other partial files
+
+@import "global/_normalize.scss";
+
+@import "global/_colors.scss";
+
+@import "global/_baseStyles.scss";
+
+@import "global/_theGrid.scss";
+
+@import "global/_mixins.scss";
+
+@import "layout/_header.scss";
+
+@import "layout/_navigation.scss";
+
+@import "layout/_mainContent.scss";
+
+@import "layout/_footer.scss";

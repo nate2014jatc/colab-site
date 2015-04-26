@@ -23,7 +23,7 @@
 			</center>
 			<br>
 		</div>
-		<div style="position: relative; top: -30px; background-color: white;">
+		<div style="position: relative; top: -30px; background-color: white; padding-bottom: 0px;">
 			<center>
 				<h1 style="color: #8ECEE5; font-size: 48px;">Our Mission</h1>
 				<hr noshade style="color: black; width: 75%;">

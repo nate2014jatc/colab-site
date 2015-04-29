@@ -470,4 +470,19 @@ p {
   margin: auto;
   margin-top: -24px; }
 
+.teams {
+  background-color: #F14D61; }
+  .teams h1 {
+    font-size: 3rem;
+    color: #FCE3E6;
+    font-weight: light;
+    border-bottom: 1px solid #FCE3E6;
+    width: 73%;
+    margin: auto; }
+  .teams h2 {
+    font-size: 2rem;
+    color: #727272; }
+    .teams h2 p {
+      text-align: left; }
+
 /*# sourceMappingURL=main.css.map */

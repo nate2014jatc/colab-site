@@ -11,3 +11,22 @@
   margin: auto;
   margin-top: -24px;
 }
+
+.teams	{
+	h1	{
+		font-size:3rem;
+		color:$teamcolor;
+		font-weight: light;
+		border-bottom:1px solid $teamcolor;
+		width: 73%;
+		margin: auto;
+	}
+	background-color: $secondaryColor;
+	h2	{
+		font-size: 2rem;
+		color: $textColor;
+		p	{
+			text-align: left;
+		}
+	}
+}

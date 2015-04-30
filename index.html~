@@ -5,6 +5,7 @@
 		<meta name="viewport" content ="width=device-width">
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="shortcut icon"	type="image/x-icon" href="img/favicon.ico">
 	</head>
 
 	<body>
@@ -67,11 +68,17 @@
 			<br>
 			<br>
 		</div>
-		<div>
+		<div class="about">
 			<br>
 			<h1>About Us</h1>
 			<br>
-			
+			<img src="img/no_avatar.png" alt="Picture of (insert name here)">
+			<h2>Jane Doe</h2>
+			<p>Example text.</p>
+			<br>
+			<img src="img/765-default-avatar.png" alt="Picture of (insert name here">
+			<h2>John Doe</h2>
+			<p>Example Text</p>
 		</div>
 	</body>
 </html>

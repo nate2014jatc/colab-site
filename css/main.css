@@ -481,9 +481,16 @@ p {
     margin: auto; }
   .teams h2 {
     font-size: 2rem;
-    color: #727272; }
-    .teams h2 p {
-      text-align: left; }
+    color: #727272;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 5%; }
+  .teams p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: -18px;
+    font-weight: lighter;
+    margin-left: 6%; }
 
 .schedule {
   background-color: #D7DADB; }
@@ -513,5 +520,20 @@ p {
     border-bottom: 1px solid #727272;
     width: 73%;
     margin: auto; }
+  .about img {
+    border-radius: 100px;
+    border-width: 0px;
+    height: 200px;
+    width: 200px; }
+  .about h2 {
+    color: #6DBCDB; }
+  .about p {
+    color: #727272; }
+  .about img:hover {
+    -ms-transform: rotate(-9deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-9deg);
+    /* Safari */
+    transform: rotate(-9deg); }
 
 /*# sourceMappingURL=main.css.map */

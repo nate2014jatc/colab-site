@@ -485,4 +485,33 @@ p {
     .teams h2 p {
       text-align: left; }
 
+.schedule {
+  background-color: #D7DADB; }
+  .schedule h1 {
+    color: #6DBCDB;
+    border-bottom: 1px solid #6DBCDB;
+    width: 73%;
+    margin: auto;
+    font-size: 3rem; }
+
+.map {
+  background-color: #6DBCDB; }
+  .map h1 {
+    color: #FCE3E6;
+    border-bottom: 1px solid #727272;
+    width: 73%;
+    margin: auto;
+    font-size: 3rem; }
+  .map iframe {
+    border-width: 0px; }
+
+.about {
+  background-color: #D7DADB; }
+  .about h1 {
+    font-size: 3rem;
+    color: #6DBCDB;
+    border-bottom: 1px solid #727272;
+    width: 73%;
+    margin: auto; }
+
 /*# sourceMappingURL=main.css.map */

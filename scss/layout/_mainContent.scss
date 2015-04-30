@@ -30,3 +30,39 @@
 		}
 	}
 }
+
+.schedule	{
+	background-color: $accentColor;
+	h1	{
+		color: $mainHeadingColor;
+		border-bottom: 1px solid $mainHeadingColor;
+		width: 73%;
+		margin: auto;
+		font-size: 3rem;
+	}
+}
+
+.map	{
+	background-color: $mainHeadingColor;
+	h1	{
+		color: $teamcolor;
+		border-bottom: 1px solid $textColor;
+		width: 73%;
+		margin: auto;
+		font-size: 3rem;
+	}
+	iframe	{
+		border-width: 0px;
+	}
+}
+
+.about	{
+	background-color: $accentColor;
+	h1	{
+		font-size: 3rem;
+		color: $mainHeadingColor;
+		border-bottom: 1px solid $textColor;
+		width: 73%;
+		margin: auto;
+	}
+}

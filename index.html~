@@ -50,6 +50,28 @@
 				This team is really awesome and is
 				located here
 			</p>
+			<br>
+			<br>
+		</div>
+		<div class="schedule">
+			<br>
+			<h1>Schedule</h1>
+			<br>
+			<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=gpvlmkkuvuga951l7ptak3bhkg%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FDenver" style=" border-width:0 " width="85%" height="400" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="map">
+			<br>
+			<h1>Map</h1>
+			<br>
+			<iframe src="https://www.google.com/maps/d/embed?mid=zNm830ScceSI.kmfCoTu-_rVw" width="75%" height="400px"></iframe>
+			<br>
+			<br>
+		</div>
+		<div>
+			<br>
+			<h1>About Us</h1>
+			<br>
+			
 		</div>
 	</body>
 </html>

@@ -455,11 +455,6 @@ p {
   background-image: src("../img/logo.svg");
   width: 60px; }
 
-.menu {
-  background-image: src("../img/menu.svg");
-  width: 60px;
-  float: right; }
-
 .missionSection h1 {
   font-size: 3rem;
   color: #6DBCDB; }
@@ -474,14 +469,14 @@ p {
   background-color: #F14D61; }
   .teams h1 {
     font-size: 3rem;
-    color: #FCE3E6;
+    color: #6E595C;
     font-weight: light;
-    border-bottom: 1px solid #FCE3E6;
+    border-bottom: 1px solid #6E595C;
     width: 73%;
     margin: auto; }
   .teams h2 {
     font-size: 2rem;
-    color: #727272;
+    color: #6E595C;
     text-align: left;
     font-weight: lighter;
     margin-left: 5%; }
@@ -504,7 +499,7 @@ p {
 .map {
   background-color: #6DBCDB; }
   .map h1 {
-    color: #FCE3E6;
+    color: #6E595C;
     border-bottom: 1px solid #727272;
     width: 73%;
     margin: auto;
@@ -530,10 +525,24 @@ p {
   .about p {
     color: #727272; }
   .about img:hover {
-    -ms-transform: rotate(-9deg);
+    -ms-transform: rotate(9deg);
     /* IE 9 */
-    -webkit-transform: rotate(-9deg);
+    -webkit-transform: rotate(9deg);
     /* Safari */
-    transform: rotate(-9deg); }
+    transform: rotate(9deg); }
+
+.twitter {
+  background: url("../img/free_2137674.jpg"); }
+
+.twittercontent {
+  background-color: rgba(48, 81, 129, 0.85);
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.9); }
+  .twittercontent h1 {
+    font-weight: light;
+    border-bottom: 1px solid #D7DADB;
+    width: 73%;
+    margin: auto; }
 
 /*# sourceMappingURL=main.css.map */

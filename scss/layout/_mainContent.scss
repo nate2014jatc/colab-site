@@ -17,6 +17,7 @@
 .scheduleSection {
   background: $accentColor;
   padding-top:15px;
+  height: 1100px;
 
   h2 {
     color:white;
@@ -102,4 +103,103 @@
 
 .firstSlot {
   margin-top:30px;
+}
+
+.teams	{
+  background: $secondaryColor;
+
+	h1	{
+		font-size:3rem;
+		color:$teamcolor;
+		font-weight: light;
+		border-bottom:1px solid $teamcolor;
+		width: 73%;
+		margin: auto;
+	}
+	h2	{
+		font-size: 2rem;
+		color: $teamcolor;
+		text-align: left;
+		font-weight: lighter;
+		margin-left: 5%;
+	}
+	p	{
+		text-align: left;
+		color: $teamcolorTrans;
+		margin-top: -18px;
+		font-weight: lighter;
+		margin-left: 6%;
+	}
+}
+
+.schedule	{
+	background-color: $accentColor;
+	h1	{
+		color: $mainHeadingColor;
+		border-bottom: 1px solid $mainHeadingColor;
+		width: 73%;
+		margin: auto;
+		font-size: 3rem;
+	}
+}
+
+.map	{
+	background-color: $mainHeadingColor;
+	h1	{
+		color: $teamcolor;
+		border-bottom: 1px solid $textColor;
+		width: 73%;
+		margin: auto;
+		font-size: 3rem;
+	}
+	iframe	{
+		border-width: 0px;
+	}
+}
+
+.about	{
+	background-color: $accentColor;
+	h1	{
+		font-size: 3rem;
+		color: $mainHeadingColor;
+		border-bottom: 1px solid $textColor;
+		width: 73%;
+		margin: auto;
+	}
+	img	{
+		border-radius: 100px;
+		border-width: 0px;
+		height: 200px;
+		width: 200px;
+	}
+	h2	{
+		color: $mainHeadingColor;
+	}
+	p	{
+		color: $textColor;
+	}
+	img:hover	{
+		-ms-transform: rotate(9deg); /* IE 9 */
+		-webkit-transform: rotate(9deg); /* Safari */
+		transform: rotate(9deg);
+	}
+}
+
+.twitter	{
+	background: url("../img/free_2137674.jpg");
+}
+
+.twittercontent	{
+	background-color: rgba(48, 81, 129, 0.85);
+	width: 100%;
+	height: 100%;
+	color: $teamcolorTrans;
+
+	h1	{
+		font-weight: light;
+		border-bottom: 1px solid $accentColor;
+		width: 73%;
+		margin: auto;
+	}
+
 }

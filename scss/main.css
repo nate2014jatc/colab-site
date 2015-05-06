@@ -369,11 +369,6 @@ h1 {
   font-weight: normal;
   font-size: 2rem; }
 
-h2 {
-  font-family: "Lato", sans-serif;
-  font-weight: normal;
-  font-size: 3rem; }
-
 p {
   font-family: "Droid Serif", serif; }
 
@@ -383,14 +378,13 @@ p {
   .grid-container > [class^="grid-"] {
     float: left;
     min-height: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
-    margin-left: 2%;
-    margin-right: 0; }
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 2%; }
     .grid-container > [class^="grid-"]:first-child {
       margin-left: 0; }
     .grid-container > [class^="grid-"]:last-child {
-      float: left; }
+      float: right; }
 
 .grid-1 {
   width: 6.5%; }
@@ -461,7 +455,13 @@ p {
   background-image: src("../img/logo.svg");
   width: 60px; }
 
-.missionSection h2 {
+.menu {
+  background-image: src("../img/menu.svg");
+  width: 60px;
+  float: right; }
+
+.missionSection h1 {
+  font-size: 3rem;
   color: #6DBCDB; }
 
 .missionLine {
@@ -469,149 +469,5 @@ p {
   width: 73%;
   margin: auto;
   margin-top: -24px; }
-
-.scheduleSection {
-  background: #D7DADB;
-  padding-top: 15px;
-  height: 1100px; }
-  .scheduleSection h2 {
-    color: white; }
-  .scheduleSection h3 {
-    margin: 7px auto; }
-
-.scheduleLine {
-  border-bottom: 1px solid #4A90E2;
-  width: 73%;
-  margin: auto;
-  margin-top: -24px; }
-
-.scheduleButton {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  color: #4A90E2;
-  border: 3px solid #4A90E2;
-  border-radius: 5px;
-  margin-top: 12px;
-  margin-left: 4%;
-  width: 20%;
-  height: 40px; }
-  .scheduleButton:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    background: #4A90E2;
-    color: #D7DADB; }
-
-.scheduleButtons > [class^="grid-"] {
-  margin-left: 4%; }
-  .scheduleButtons > [class^="grid-"]:first-child {
-    margin-left: 4%; }
-
-.dateSlot {
-  text-align: left;
-  width: 90%;
-  margin: 15px auto;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-  .dateSlot h4 {
-    color: #4A90E2;
-    font-size: 1.8rem;
-    font-weight: 100;
-    margin: 2px 5px;
-    border-right: 1px solid #727272;
-    opacity: .65; }
-  .dateSlot h5 {
-    color: #727272;
-    font-size: 1.4rem;
-    font-weight: 100;
-    margin: 10px 0px 0px;
-    opacity: 0.65; }
-  .dateSlot h6 {
-    color: #F14D61;
-    font-size: 1.4rem;
-    font-weight: 100;
-    margin: 0px 0px;
-    opacity: 0.65; }
-
-.firstSlot {
-  margin-top: 30px; }
-
-.teams {
-  background: #F14D61; }
-  .teams h1 {
-    font-size: 3rem;
-    color: #6E595C;
-    font-weight: light;
-    border-bottom: 1px solid #6E595C;
-    width: 73%;
-    margin: auto; }
-  .teams h2 {
-    font-size: 2rem;
-    color: #6E595C;
-    text-align: left;
-    font-weight: lighter;
-    margin-left: 5%; }
-  .teams p {
-    text-align: left;
-    color: rgba(255, 255, 255, 0.9);
-    margin-top: -18px;
-    font-weight: lighter;
-    margin-left: 6%; }
-
-.schedule {
-  background-color: #D7DADB; }
-  .schedule h1 {
-    color: #6DBCDB;
-    border-bottom: 1px solid #6DBCDB;
-    width: 73%;
-    margin: auto;
-    font-size: 3rem; }
-
-.map {
-  background-color: #6DBCDB; }
-  .map h1 {
-    color: #6E595C;
-    border-bottom: 1px solid #727272;
-    width: 73%;
-    margin: auto;
-    font-size: 3rem; }
-  .map iframe {
-    border-width: 0px; }
-
-.about {
-  background-color: #D7DADB; }
-  .about h1 {
-    font-size: 3rem;
-    color: #6DBCDB;
-    border-bottom: 1px solid #727272;
-    width: 73%;
-    margin: auto; }
-  .about img {
-    border-radius: 100px;
-    border-width: 0px;
-    height: 200px;
-    width: 200px; }
-  .about h2 {
-    color: #6DBCDB; }
-  .about p {
-    color: #727272; }
-  .about img:hover {
-    -ms-transform: rotate(9deg);
-    /* IE 9 */
-    -webkit-transform: rotate(9deg);
-    /* Safari */
-    transform: rotate(9deg); }
-
-.twitter {
-  background: url("../img/free_2137674.jpg"); }
-
-.twittercontent {
-  background-color: rgba(48, 81, 129, 0.85);
-  width: 100%;
-  height: 100%;
-  color: rgba(255, 255, 255, 0.9); }
-  .twittercontent h1 {
-    font-weight: light;
-    border-bottom: 1px solid #D7DADB;
-    width: 73%;
-    margin: auto; }
 
 /*# sourceMappingURL=main.css.map */

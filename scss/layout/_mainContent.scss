@@ -1,6 +1,6 @@
+//missionSection
 .missionSection {
-  h1 {
-    font-size:3rem;
+  h2 {
     color:$mainHeadingColor;
   }
 }
@@ -10,4 +10,96 @@
   width: 73%;
   margin: auto;
   margin-top: -24px;
+}
+
+
+//schedule section
+.scheduleSection {
+  background: $accentColor;
+  padding-top:15px;
+
+  h2 {
+    color:white;
+  }
+
+  h3 {
+    margin:7px auto;
+  }
+
+}
+
+.scheduleLine {
+  border-bottom:1px solid $optionalColor;
+  width: 73%;
+  margin: auto;
+  margin-top: -24px;
+}
+
+.scheduleButton {
+  @include boxShadow(1);
+  color:$optionalColor;
+  border:3px solid $optionalColor;
+  border-radius:5px;
+  margin-top:12px;
+  margin-left:4%;
+  width:20%;
+  height: 40px;
+
+  &:hover {
+    @include boxShadow(3);
+    background: $optionalColor;
+    color: $accentColor;
+  }
+
+}
+
+.scheduleButtons {
+
+ >[class^="grid-"]{
+   &:first-child{
+    margin-left: 4%;
+  }
+
+  margin-left:4%;
+  }
+}
+
+
+
+.dateSlot {
+  text-align: left;
+  width: 90%;
+  margin: 15px auto;
+  background: #fff;
+  border-radius: 5px;
+  @include boxShadow(1);
+
+
+  h4 {
+    color: $optionalColor;
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin: 2px 5px;
+    border-right: 1px solid $textColor;
+    opacity: .65;
+  }
+  h5 {
+    color: $textColor;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 10px 0px 0px;
+    opacity:.65
+
+  }
+  h6{
+    color:$secondaryColor;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0px 0px;
+    opacity:.65
+  }
+}
+
+.firstSlot {
+  margin-top:30px;
 }

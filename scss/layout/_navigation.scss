@@ -1,0 +1,15 @@
+
+.nav{
+  background:$primaryColor;
+  @include boxShadow(2);
+  position:fixed;
+  z-index:1;
+  text-align:left;
+
+}
+
+
+.logo {
+  background-image: src("../img/logo.svg");
+  width: 60px;
+}

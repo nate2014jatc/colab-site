@@ -1,0 +1,257 @@
+//missionSection
+.missionSection {
+  h1 {
+    color:$mainHeadingColor;
+  }
+
+  p {
+    padding: 0 40px;
+  }
+}
+
+.missionLine {
+  border-bottom:1px solid $textColor;
+  width: 73%;
+  margin: auto;
+  margin-top: -24px;
+}
+
+
+//schedule section
+.scheduleSection {
+  background: $accentColor;
+  padding-top:15px;
+  height: 1100px;
+
+  h1 {
+    color:white;
+  }
+
+  h3 {
+    margin:7px auto;
+  }
+
+}
+
+.scheduleLine {
+  border-bottom:1px solid $optionalColor;
+  width: 73%;
+  margin: auto;
+  margin-top: -24px;
+}
+
+.scheduleButton {
+  @include boxShadow(1);
+  color:$optionalColor;
+  border:3px solid $optionalColor;
+  border-radius:5px;
+  margin-top:12px;
+  margin-left:4%;
+  width:20%;
+  height: 40px;
+
+  &:hover {
+    @include boxShadow(3);
+    background: $optionalColor;
+    color: $accentColor;
+  }
+
+}
+
+.scheduleButtons {
+
+ >[class^="grid-"]{
+   &:first-child{
+    margin-left: 4%;
+  }
+
+  margin-left:4%;
+  }
+}
+
+
+
+.dateSlot {
+  text-align: left;
+  width: 90%;
+  margin: 15px auto;
+  background: #fff;
+  border-radius: 5px;
+  @include boxShadow(3);
+
+
+  h4 {
+    color: $optionalColor;
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin: 2px 5px;
+    border-right: 1px solid $textColor;
+    opacity: .65;
+  }
+  h5 {
+    color: $textColor;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 10px 0px 0px;
+    opacity:.65
+
+  }
+  h6{
+    color:$secondaryColor;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0px 0px;
+    opacity:.65
+  }
+}
+
+.firstSlot {
+  margin-top:30px;
+}
+
+.teams	{
+  background: $secondaryColor;
+
+	h1	{
+		font-size:3rem;
+		color:#fff;
+		font-weight: light;
+		border-bottom:1px solid #fff;
+		width: 40%;
+		margin: auto;
+    padding-top:25px;
+    opacity:.85;
+	}
+	h3	{
+		font-size: 2rem;
+		color: $teamcolor;
+		text-align: left;
+		font-weight: lighter;
+		margin-left: 5%;
+	}
+	p	{
+		text-align: left;
+		color: #fff;
+		margin-top: -32px;
+		font-weight: 300;
+		margin-left: 6%;
+    margin-right: 9%;
+    opacity: .85;
+	}
+}
+
+.schedule	{
+	background-color: $accentColor;
+	h1	{
+		color: $mainHeadingColor;
+		border-bottom: 1px solid $mainHeadingColor;
+		width: 73%;
+		margin: auto;
+		font-size: 3rem;
+	}
+}
+
+.map	{
+	background-color: $mainHeadingColor;
+  height: 600px;
+  padding-top:30px;
+	h1	{
+		color: #fff;
+		border-bottom: 1px solid #fff;
+		width: 40%;
+		margin: auto;
+    margin-bottom:25px;
+		font-size: 3rem;
+	}
+	iframe	{
+		border-width: 0px;
+	}
+}
+
+.mapDiv {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 87%;
+  margin: auto;
+  border-radius: 5px;
+  min-height: 450px;
+  padding-top: 25px;
+}
+
+.about	{
+	background-color: #fff;
+  padding-top: 30px;
+
+  div {
+    margin-bottom: 100px;
+  }
+	h1	{
+		font-size: 3rem;
+		color: $mainHeadingColor;
+		border-bottom: 1px solid $textColor;
+		width: 56%;
+		margin: auto;
+    margin-bottom: 25px;
+
+	}
+	img	{
+		border-radius: 100px;
+		border-width: 0px;
+		height: 200px;
+		width: 200px;
+    &:hover {
+      -ms-transform: rotate(9deg); /* IE 9 */
+  		-webkit-transform: rotate(9deg); /* Safari */
+  		transform: srotate(9deg);
+    }
+	}
+	h2	{
+    font-size:2rem;
+		color: $mainHeadingColor;
+    margin-bottom:0;
+    font-weight:200;
+	}
+	p	{
+		color: $textColor;
+    margin-top: 1px;
+	}
+
+}
+
+.twitter	{
+	background: url("../img/swimming.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.twittercontent	{
+	background-color: rgba(48, 81, 129, 0.85);
+	width: 100%;
+	height: 100%;
+	color: $teamcolorTrans;
+
+	h1	{
+		margin: auto;
+    padding-top: 25px;
+	}
+
+}
+
+.tweet {
+  background:$optionalColor;
+  opacity:.85;
+  @include boxShadow(3);
+  min-height: 70px;
+  width: 90%;
+  margin-top: 45px;
+  padding: 20px 10px 0px;
+  border-radius:2px;
+
+  p {
+    font-size: 1.5rem;
+    font-weight:100;
+    margin:0;
+    opacity:.95;
+
+  }
+}

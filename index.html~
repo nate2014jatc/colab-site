@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+	<head>
+		<title>Client Test</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content ="width=device-width">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="shortcut icon"	type="image/x-icon" href="img/favicon.ico">
+	</head>
+
+	<body>
+			<div class="navDiv grid-container">
+				<div class="nav grid-12">
+					<img class="logo" src="img/logo.svg" alt="SLSL Logo">
+					<img class="menu" src="img/menu.svg" alt="Menu Icon">
+				</div>
+			</div>
+		<div class="mainHeader" >
+		</div>
+			<div class="titleBox">
+				<h1>Salt Lake Swim League</h1>
+		</div>
+		<div class ="missionSection">
+				<h1>Our Mission</h1>
+				<div class="missionLine"></div>
+				<p>
+					Text explaining the epicness of the SLSL Team and values.<br>
+					This can easily be multi-line, or even dynamic.
+				</p>
+		</div>
+		<br>
+		<br>
+		<div class="teams">
+			<h1>Teams</h1>
+			<br>
+			<h2>JCC</h2>
+			<p>Some example text. A brief
+				description about this team.<br>
+				This team is really awesome and is
+				located here
+			</p>
+			<h2>LCAC</h2>
+			<p>Some example text. A brief
+				description about this team.<br>
+				This team is really awesome and is
+				located here
+			</p>
+			<h2>LIFETIME</h2>
+			<p>Some example text. A brief
+				description about this team.<br>
+				This team is really awesome and is
+				located here
+			</p>
+			<br>
+			<br>
+		</div>
+		<div class="schedule">
+			<br>
+			<h1>Schedule</h1>
+			<br>
+			<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=gpvlmkkuvuga951l7ptak3bhkg%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FDenver" style=" border-width:0 " width="85%" height="400" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="map">
+			<br>
+			<h1>Map</h1>
+			<br>
+			<iframe src="https://www.google.com/maps/d/embed?mid=zNm830ScceSI.kmfCoTu-_rVw" width="75%" height="400px"></iframe>
+			<br>
+			<br>
+		</div>
+		<div class="about">
+			<br>
+			<h1>About Us</h1>
+			<br>
+			<img src="img/no_avatar.png" alt="Picture of (insert name here)">
+			<h2>Jane Doe</h2>
+			<p>Example text.</p>
+			<br>
+			<img src="img/765-default-avatar.png" alt="Picture of (insert name here">
+			<h2>John Doe</h2>
+			<p>Example Text</p>
+		</div>
+	</body>
+</html>

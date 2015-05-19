@@ -12,7 +12,6 @@
 			<div class="navDiv grid-container">
 				<div class="nav grid-12">
 					<img class="logo" src="img/logo.svg" alt="SLSL Logo">
-					<img class="menu" src="img/menu.svg" alt="Menu Icon">
 				</div>
 			</div>
 		<div class="mainHeader" >
@@ -24,8 +23,9 @@
 				<h1>Our Mission</h1>
 				<div class="missionLine"></div>
 				<p>
-					Text explaining the epicness of the SLSL Team and values.<br>
+					Text explaining the epicness of the SLSL Team and values.
 					This can easily be multi-line, or even dynamic.
+					Lets have fun changing.
 				</p>
 		</div>
 		<br>
@@ -33,52 +33,129 @@
 		<div class="teams">
 			<h1>Teams</h1>
 			<br>
-			<h2>JCC</h2>
+			<h3>JCC</h3>
 			<p>Some example text. A brief
-				description about this team.<br>
+				description about this team.
 				This team is really awesome and is
 				located here
 			</p>
-			<h2>LCAC</h2>
+			<h3>LCAC</h3>
 			<p>Some example text. A brief
-				description about this team.<br>
+				description about this team.
 				This team is really awesome and is
 				located here
 			</p>
-			<h2>LIFETIME</h2>
+			<h3>LIFETIME</h3>
 			<p>Some example text. A brief
-				description about this team.<br>
+				description about this team.
 				This team is really awesome and is
 				located here
 			</p>
 			<br>
 			<br>
 		</div>
-		<div class="schedule">
-			<br>
+		<div class="scheduleSection">
 			<h1>Schedule</h1>
-			<br>
-			<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=gpvlmkkuvuga951l7ptak3bhkg%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FDenver" style=" border-width:0 " width="85%" height="400" frameborder="0" scrolling="no"></iframe>
-		</div>
+				<div class="scheduleLine"></div>
+				<div class='grid-container scheduleButtons'>
+				<div class ='grid-2 scheduleButton jcc'><h3>JCC</h3></div>
+				<div class ='grid-2 scheduleButton lcac'><h3>lCAC</h3></div>
+				<div class ='grid-2 scheduleButton lt'><h3>LT</h3></div>
+				<div class ='grid-2 scheduleButton sm'><h3>SM</h3></div>
+			</div>
+			<div id="dateSlotsContainer">
+			<div id="dateslots" class="dateSlots">
+				<div class="grid-container dateSlot firstSlot">
+					<div class="grid-3"><h4>June 16th</h4></div>
+					<div class="grid-9"><h5>JCC vs. Sports Mall</h5> <h6>Home</h6></div>
+				</div>
+					<div class="grid-container dateSlot">
+						<div class="grid-3"><h4>June 23rd</h4></div>
+						<div class="grid-9"><h5>JCC vs. Life Centre</h5> <h6>Home</h6></div>
+					</div>
+					<div class="grid-container dateSlot">
+						<div class="grid-3"><h4>June 30th</h4></div>
+						<div class="grid-9"><h5>JCC vs. Life Time Fitness</h5> <h6>Away</h6></div>
+					</div>
+					<div class="grid-container dateSlot">
+						<div class="grid-3"><h4>July 9th</h4></div>
+						<div class="grid-9"><h5>Relay Meet</h5> <h6>Life Time Fitness</h6></div>
+				</div>
+					<div class="grid-container dateSlot">
+						<div class="grid-3"><h4>July 14th</h4></div>
+						<div class="grid-9"><h5>JCC vs. SportsMall</h5> <h6>Away</h6></div>
+				</div>
+				<div class="grid-container dateSlot">
+					<div class="grid-3"><h4>July 21st</h4></div>
+					<div class="grid-9"><h5>JCC vs. Life Centre</h5> <h6>Away</h6></div>
+			</div>
+				<div class="grid-container dateSlot">
+					<div class="grid-3"><h4>July 28th</h4></div>
+					<div class="grid-9"><h5>JCC vs. Life Time Fitness</h5> <h6>Home</h6></div>
+			</div>
+				<div class="grid-container dateSlot">
+					<div class="grid-3"><h4>July 28th</h4></div>
+					<div class="grid-9"><h5>JCC vs. Life Time Fitness</h5> <h6>Home</h6></div>
+			</div>
+				<div class="grid-container dateSlot">
+					<div class="grid-3"><h4>Aug 6th</h4></div>
+					<div class="grid-9"><h5>Championship Meet</h5> <h6>South Davis Rec</h6></div>
+			</div>
+				<div class="grid-container dateSlot">
+					<div class="grid-3"><h4>Aug 7th</h4></div>
+					<div class="grid-9"><h5>Championship Meet</h5> <h6>South Davis Rec</h6></div>
+			</div>
+
+
+
+				</div>
+			</div>
+			</div>
 		<div class="map">
-			<br>
 			<h1>Map</h1>
-			<br>
-			<iframe src="https://www.google.com/maps/d/embed?mid=zNm830ScceSI.kmfCoTu-_rVw" width="75%" height="400px"></iframe>
-			<br>
-			<br>
+			<div class="mapDiv">
+				<iframe src="https://www.google.com/maps/d/embed?mid=zNm830ScceSI.kmfCoTu-_rVw" width="75%" height="400px"></iframe>
 		</div>
+		</div>
+
 		<div class="about">
-			<br>
 			<h1>About Us</h1>
+			<div>
+				<img src="img/no_avatar.png" alt="Picture of (insert name here)">
+				<h2>Jane Doe</h2>
+				<p>Example text.</p>
+			</div>
+			<div>
+				<img src="img/765-default-avatar.png" alt="Picture of (insert name here">
+				<h2>John Doe</h2>
+				<p>Example Text</p>
+			</div>
 			<br>
-			<img src="img/no_avatar.png" alt="Picture of (insert name here)">
-			<h2>Jane Doe</h2>
-			<p>Example text.</p>
-			<br>
-			<img src="img/765-default-avatar.png" alt="Picture of (insert name here">
-			<h2>John Doe</h2>
-			<p>Example Text</p>
 		</div>
+		<div class="twitter">
+			<div class="twittercontent">
+				<h1>Recent Tweets</h1>
+				<ul class="tweets">
+					<li class="tweet"><p>"The season has officially begun!"</p></li>
+					<li class="tweet"><p>"The season has officially begun!"</p></li>
+					<li class="tweet"><p>"The season has officially begun!"</p></li>
+				</ul>
+			</div>
+			<div>
+				<a href="mailto:faq@slslcontactsite?subject=Question+not+listed+in+the+faq&body=Write+your+question+below+this+line">
+					<button>Contact Us!</button>
+				</a>
+			</div>
+
+		</div>
+
+			<script type="text/javascript" src="js/app.js" ></script>
 	</body>
 </html>
+
+
+
+
+
+
+	

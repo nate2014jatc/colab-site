@@ -3,8 +3,10 @@
     background: url("../img/header.jpg") no-repeat center;
     background-size: 112%;
     height:197px;
-    @include boxShadow(2);
+    @include boxShadow(1);
     position: relative;
+    top:  54px;
+    margin-bottom: 53px;
 }
 
 .titleBox {

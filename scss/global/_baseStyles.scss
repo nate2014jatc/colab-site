@@ -23,10 +23,15 @@ $bodyFont:'Lato', sans-serif;
   box-sizing:border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   color:$textColor;
   font-size: 1em;
   text-align:center;
+
 }
 
 h1 {

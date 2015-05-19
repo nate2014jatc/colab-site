@@ -27,7 +27,7 @@
 .scheduleSection {
   background: $accentColor;
   padding-top:50px;
-  height: 1100px;
+  height: 1130px;
 
   h1 {
     color:white;
@@ -275,4 +275,28 @@
     opacity:.95;
 
   }
+}
+
+
+//FAQ Section-------------------------------->
+//------------------------------------------------>
+
+
+.FAQcontent {
+  ul {
+    li{
+      text-align: left;
+    }
+  }
+}
+.question {
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+.answer {
+  margin-left: 20px;
+}
+
+.a {
+  color: #2ecc71;
 }

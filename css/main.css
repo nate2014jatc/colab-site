@@ -381,7 +381,9 @@ h2 {
 
 p {
   font-family: "Lato", sans-serif;
-  opacity: .85; }
+  opacity: .85;
+  line-height: 1.5;
+  letter-spacing: .03em; }
 
 li {
   text-decoration: none;
@@ -458,6 +460,9 @@ ul {
   position: relative;
   top: 54px;
   margin-bottom: 53px; }
+  @media (max-width: 320px) {
+    .mainHeader {
+      height: 180px; } }
 
 .titleBox {
   background: #305181;
@@ -468,6 +473,9 @@ ul {
     font-size: 2.2rem;
     margin: 0;
     color: #fff; }
+    @media (max-width: 320px) {
+      .titleBox h1 {
+        font-size: 1.8rem; } }
 
 .nav {
   background: #305181;
@@ -494,7 +502,7 @@ ul {
 .scheduleSection {
   background: #D7DADB;
   padding-top: 50px;
-  height: 1100px; }
+  height: 1130px; }
   .scheduleSection h1 {
     color: white;
     margin-top: 0; }
@@ -674,6 +682,19 @@ ul {
     font-weight: 100;
     margin: 0;
     opacity: .95; }
+
+.FAQcontent ul li {
+  text-align: left; }
+
+.question {
+  font-size: 1.3rem;
+  margin-left: 10px; }
+
+.answer {
+  margin-left: 20px; }
+
+.a {
+  color: #2ecc71; }
 
 footer {
   background: #F14D61;

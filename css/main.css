@@ -453,7 +453,7 @@ ul {
   display: table; }
 
 .mainHeader {
-  background: url("../img/header.jpg") no-repeat center;
+  background: url("../img/waterline.jpg") no-repeat center;
   background-size: 112%;
   height: 197px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -491,7 +491,7 @@ ul {
 .missionSection h1 {
   color: #6DBCDB; }
 .missionSection p {
-  padding: 0 40px; }
+  padding: 0 30px; }
 
 .missionLine {
   border-bottom: 1px solid #727272;
@@ -588,6 +588,7 @@ ul {
     font-weight: 300;
     margin-left: 6%;
     margin-right: 9%;
+    margin-bottom: 75px;
     opacity: .85; }
 
 .schedule {
@@ -688,12 +689,17 @@ ul {
 
 .question {
   font-size: 1.3rem;
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-right: 5px;
+  color: #305181; }
 
 .answer {
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-bottom: 50px; }
 
 .a {
+  font-size: 1.5rem;
   color: #2ecc71; }
 
 footer {

@@ -359,6 +359,9 @@ th {
 * {
   box-sizing: border-box; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   color: #727272;
   font-size: 1em;
@@ -378,7 +381,9 @@ h2 {
 
 p {
   font-family: "Lato", sans-serif;
-  opacity: .85; }
+  opacity: .85;
+  line-height: 1.5;
+  letter-spacing: .03em; }
 
 li {
   text-decoration: none;
@@ -448,11 +453,16 @@ ul {
   display: table; }
 
 .mainHeader {
-  background: url("../img/header.jpg") no-repeat center;
+  background: url("../img/waterline.jpg") no-repeat center;
   background-size: 112%;
   height: 197px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  position: relative; }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+  top: 54px;
+  margin-bottom: 53px; }
+  @media (max-width: 320px) {
+    .mainHeader {
+      height: 180px; } }
 
 .titleBox {
   background: #305181;
@@ -463,6 +473,9 @@ ul {
     font-size: 2.2rem;
     margin: 0;
     color: #fff; }
+    @media (max-width: 320px) {
+      .titleBox h1 {
+        font-size: 1.8rem; } }
 
 .nav {
   background: #305181;
@@ -478,7 +491,7 @@ ul {
 .missionSection h1 {
   color: #6DBCDB; }
 .missionSection p {
-  padding: 0 40px; }
+  padding: 0 30px; }
 
 .missionLine {
   border-bottom: 1px solid #727272;
@@ -488,10 +501,11 @@ ul {
 
 .scheduleSection {
   background: #D7DADB;
-  padding-top: 15px;
-  height: 1100px; }
+  padding-top: 50px;
+  height: 1130px; }
   .scheduleSection h1 {
-    color: white; }
+    color: white;
+    margin-top: 0; }
   .scheduleSection h3 {
     margin: 7px auto; }
 
@@ -559,7 +573,7 @@ ul {
     border-bottom: 1px solid #fff;
     width: 40%;
     margin: auto;
-    padding-top: 25px;
+    padding-top: 50px;
     opacity: .85; }
   .teams h3 {
     font-size: 2rem;
@@ -574,6 +588,7 @@ ul {
     font-weight: 300;
     margin-left: 6%;
     margin-right: 9%;
+    margin-bottom: 75px;
     opacity: .85; }
 
 .schedule {
@@ -587,8 +602,8 @@ ul {
 
 .map {
   background-color: #6DBCDB;
-  height: 600px;
-  padding-top: 30px; }
+  height: 660px;
+  padding-top: 50px; }
   .map h1 {
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -610,7 +625,7 @@ ul {
 
 .about {
   background-color: #fff;
-  padding-top: 30px; }
+  padding-top: 50px; }
   .about div {
     margin-bottom: 100px; }
   .about h1 {
@@ -652,7 +667,7 @@ ul {
   color: rgba(255, 255, 255, 0.9); }
   .twittercontent h1 {
     margin: auto;
-    padding-top: 25px; }
+    padding-top: 50px; }
 
 .tweet {
   background: #4A90E2;
@@ -668,5 +683,34 @@ ul {
     font-weight: 100;
     margin: 0;
     opacity: .95; }
+
+.FAQcontent ul li {
+  text-align: left; }
+
+.question {
+  font-size: 1.3rem;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: #305181; }
+
+.answer {
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-bottom: 50px; }
+
+.a {
+  font-size: 1.5rem;
+  color: #2ecc71; }
+
+footer {
+  background: #F14D61;
+  height: 100px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 40px; }
+  footer p {
+    margin: 0;
+    padding: 0; }
 
 /*# sourceMappingURL=main.css.map */

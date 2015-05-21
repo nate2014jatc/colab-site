@@ -196,6 +196,8 @@ var smSlots=[];
 var scheduleButtons = document.getElementsByClassName('scheduleButton');
 var dateSectionContainer = document.getElementById('dateSlotsContainer');
 
+var faqButtons = document.getElementsByClassName('question');
+
 //CREATE ELEMENTS WITH OBJECT INFO and store in array
 
 function createSlots(input,output,aclass) {
@@ -232,9 +234,9 @@ function removeSlotsDiv (elementId) {
 
 //append elements to the DOM if button pressed
   //capture event on button
-  function addClick () {
+  function addClick (button,task) {
     for(var i =0; i<scheduleButtons.length;i++) {
-      scheduleButtons[i].onclick= appendSlots;
+      button[i].onclick= task;
     }
   }
 
@@ -265,7 +267,9 @@ function removeSlotsDiv (elementId) {
     }
   }
 
+function displayAnswers () {
 
+}
 
 
 
@@ -276,4 +280,5 @@ createSlots(lcacSchedule,lcacSlots,"lcac");
 createSlots(ltSchedule,ltSlots,"lt");
 createSlots(smSchedule,smSlots,"sm");
 
-addClick();
+addClick(scheduleButtons,appendSlots);
+//addClick(faqButtons,);

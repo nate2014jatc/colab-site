@@ -23,15 +23,10 @@ $bodyFont:'Lato', sans-serif;
   box-sizing:border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   color:$textColor;
   font-size: 1em;
   text-align:center;
-
 }
 
 h1 {
@@ -52,8 +47,6 @@ h2 {
 p {
   font-family:$bodyFont;
   opacity:.85;
-  line-height: 1.5;
-  letter-spacing: .03em;
 }
 
 li {

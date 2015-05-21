@@ -207,7 +207,6 @@ function createSlots(input,output,aclass) {
       slot.innerHTML = "<div class='grid-3'><h4>"+input[i]["date"]+"</h4></div><div class='grid-9'><h5>"+input[i]["opponent"]+"</h5><h6>"+input[i]["location"]+"</h6</div>";
 
       output.push(slot);
-      console.log(slot);
 
     }
 
@@ -268,7 +267,8 @@ function removeSlotsDiv (elementId) {
   }
 
 function displayAnswers () {
-
+  console.log(this.children[1]);
+  this.children[1].classList.toggle("visible");
 }
 
 
@@ -281,4 +281,4 @@ createSlots(ltSchedule,ltSlots,"lt");
 createSlots(smSchedule,smSlots,"sm");
 
 addClick(scheduleButtons,appendSlots);
-//addClick(faqButtons,);
+addClick(faqButtons,displayAnswers);

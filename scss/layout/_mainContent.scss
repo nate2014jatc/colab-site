@@ -312,8 +312,11 @@
 
 .FAQcontent {
   ul {
+    text-align: left;
     li{
       text-align: left;
+      color: $textColor;
+      font-size: 1rem;
     }
   }
 }
@@ -332,4 +335,8 @@
 .a {
   font-size:1.5rem;
   color: #2ecc71;
+}
+
+.visible {
+  display:none;
 }

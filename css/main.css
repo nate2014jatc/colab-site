@@ -455,7 +455,7 @@ ul {
 .mainHeader {
   background: url("../img/slslswim.jpg") no-repeat center;
   background-size: cover;
-  background-position-y: 10px;
+  background-position-y: 7px;
   height: 197px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative;
@@ -701,8 +701,12 @@ ul {
       .tweet p {
         font-size: 1.1rem; } }
 
-.FAQcontent ul li {
+.FAQcontent ul {
   text-align: left; }
+  .FAQcontent ul li {
+    text-align: left;
+    color: #727272;
+    font-size: 1rem; }
 
 .question {
   font-size: 1.3rem;
@@ -718,6 +722,9 @@ ul {
 .a {
   font-size: 1.5rem;
   color: #2ecc71; }
+
+.visible {
+  display: none; }
 
 footer {
   background: #F14D61;

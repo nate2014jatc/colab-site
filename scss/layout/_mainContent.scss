@@ -29,6 +29,7 @@
   padding-top:50px;
   height: 1130px;
 
+
   @media (max-width:320px) {
     height:950px;
   }
@@ -102,6 +103,7 @@
     @media (max-width:320px) {
       font-size: 1.4rem;
     }
+
   }
   h5 {
     color: $textColor;
@@ -125,6 +127,7 @@
     @media (max-width:320px) {
       font-size: 1.1rem;
     }
+
   }
 }
 
@@ -195,6 +198,7 @@
 	iframe	{
 		border-width: 0px;
     width:95%;
+
 	}
 }
 
@@ -287,10 +291,12 @@
   border-radius:2px;
 
   p {
+
     font-size: 1.2rem;
     font-weight:100;
     margin:0;
     opacity:.95;
+
 
     @media (max-width:320px) {
       font-size: 1.1rem;

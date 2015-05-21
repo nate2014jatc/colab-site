@@ -1,7 +1,8 @@
 
 .mainHeader {
-    background: url("../img/waterline.jpg") no-repeat center;
-    background-size: 112%;
+    background: url("../img/slslswim.jpg") no-repeat center;
+    background-size: cover;
+    background-position-y:10px;
     height:197px;
     @include boxShadow(1);
     position: relative;

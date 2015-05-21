@@ -267,7 +267,9 @@ function removeSlotsDiv (elementId) {
     }
   }
 
+function displayAnswers () {
 
+}
 
 
 
@@ -279,4 +281,4 @@ createSlots(ltSchedule,ltSlots,"lt");
 createSlots(smSchedule,smSlots,"sm");
 
 addClick(scheduleButtons,appendSlots);
-addClick(faqButtons,);
+//addClick(faqButtons,);

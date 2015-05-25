@@ -17,15 +17,14 @@
 		<div class="mainHeader" >
 		</div>
 			<div class="titleBox">
+				<a name="top"></a>
 				<h1>Salt Lake Swim League</h1>
 		</div>
 		<div class ="missionSection">
 				<h1>Our Mission</h1>
 				<div class="missionLine"></div>
 				<p>
-					Text explaining the epicness of the SLSL Team and values.
-					This can easily be multi-line, or even dynamic.
-					Lets have fun changing.
+					It is the objective of the Salt Lake Swim League to offer an additional program for its member clubs to promote sustained memberships and offer an enhancement for the more full utilization of each member facility. It shall create an environment that is safe and fun for its participants by using competitive swimming as the vehicle where sportsmanship, swimming competency, and competition are experienced.
 				</p>
 		</div>
 		<br>
@@ -34,22 +33,16 @@
 			<h1>Teams</h1>
 			<br>
 			<h3>JCC</h3>
-			<p>Some example text. A brief
-				description about this team.
-				This team is really awesome and is
-				located here
+			<p> Enriching the life of the Jewish community and the community at large by offering educational, cultural, and recreational opportunities in a place where people of all backgrounds, cultures and beliefs gather in peace and understanding.
 			</p>
 			<h3>LCAC</h3>
-			<p>Some example text. A brief
-				description about this team.
-				This team is really awesome and is
-				located here
+			<p>The LifeCentre Athletic Club brings the finest in fitness and recreational facilities to its members and their guests. It also provides a personal and professional staff, and a combination of adult and youth programs like no other facility in the Salt Lake Valley. The LifeCentre Athletic Club is a complete service oriented “Four Star” facility that caters to you and your family’s fitness needs.
 			</p>
 			<h3>LIFETIME</h3>
-			<p>Some example text. A brief
-				description about this team.
-				This team is really awesome and is
-				located here
+			<p>Our mission is to provide an Entertaining, Educational, Friendly and Inviting, Functional and Innovative experience of uncompromising quality that meets the health and fitness needs of the entire family.
+			</p>
+			<h3>SPORTS MALL</h3>
+			<p> Our wide range of amenities and facilities, and unique programs and activities tell the story of why we have gained the reputation as the premiere Salt Lake swimming and tennis club. Serving Utah families since 1975, Sports Mall is the only Private Family Fitness Center that offers a full service Racquet, Swimming and Athletic Club.
 			</p>
 			<br>
 			<br>
@@ -141,21 +134,30 @@
 					<li class="tweet"><p>"The season has officially begun!"</p></li>
 				</ul>
 			</div>
-			<div>
-				<a href="mailto:faq@slslcontactsite?subject=Question+not+listed+in+the+faq&body=Write+your+question+below+this+line">
-					<button>Contact Us!</button>
-				</a>
-			</div>
-
 		</div>
+		<div class="FAQDiv">
+			<div class="FAQcontent">
+				<h1>Frequently Asked Qs</h1>
+					<ul class="question"><p><span class="q">Q:</span> When does the swim season start and finish?</p>
+						<li class="answer visible"><p><span class="a">A:</span> The season runs for 12 weeks beginning May 11 and ending August 7th with the Salt Lake Swim League Championship Meet.</p></li>
+					</ul>
+					<ul class="question"><p><span class="q">Q:</span> What is the order of events at the meets?</p>
+						<li class="answer visible"><p><span class="a">A:</span> The order of events at dual meets is Medley Relay, Individual Medley, Freestyle, Breaststroke, Backstroke, Butterfly, and finishing with the Freestyle Relay. Each stroke/event proceeds by age group from youngest to oldest, starting with 6&under. Ladies always swim before the gentlemen.</p></li>
+					</ul>
+					<ul class="question"><p><span class="q">Q:</span> Will my child be able to swim in every swim meet?</p>
+						<li class="answer visible"><p><span class="a">A:</span> Yes. However, it is not mandatory for your child to swim in every meet. Keep in mind; in order to attend the end of the year Championship, you do need to attend at least 3 swim meets.</p></li>
+					</ul>
+					<ul class="question"><p><span class="q">Q:</span> Do you require my child to wear a specific swimsuit?</p>
+						<li class="answer visible"><p><span class="a">A:</span> Children are free to wear their own swimsuit, but we encourage you to purchase your team swimsuit to wear for swim meets.</p></li>
+					</ul>
+			</div>
+		</div>
+		<footer>
+			<a href="#top">back to top</a>
+			<p>Salt Lake Swim League &copy; 2015</p>
+
+		</footer>
 
 			<script type="text/javascript" src="js/app.js" ></script>
 	</body>
 </html>
-
-
-
-
-
-
-	

@@ -280,6 +280,7 @@
 
 }
 
+
 .tweet {
   background:$optionalColor;
   opacity:.85;
@@ -305,7 +306,33 @@
   }
 }
 
+#tweet {
+li{
+  background:$optionalColor;
+  opacity:.85;
+  @include boxShadow(3);
+  min-height: 70px;
+  width: 90%;
+  margin-top: 45px;
+  padding: 20px 10px 0px;
+  border-radius:2px;
 
+  p {
+
+    font-size: 1.2rem;
+    font-weight:100;
+    margin:0;
+    opacity:.95;
+
+
+    @media (max-width:320px) {
+      font-size: 1.1rem;
+    }
+
+  }
+}
+
+}
 //FAQ Section-------------------------------->
 //------------------------------------------------>
 

@@ -701,6 +701,24 @@ ul {
       .tweet p {
         font-size: 1.1rem; } }
 
+#tweet li {
+  background: #4A90E2;
+  opacity: .85;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  min-height: 70px;
+  width: 90%;
+  margin-top: 45px;
+  padding: 20px 10px 0px;
+  border-radius: 2px; }
+  #tweet li p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0;
+    opacity: .95; }
+    @media (max-width: 320px) {
+      #tweet li p {
+        font-size: 1.1rem; } }
+
 .FAQcontent ul {
   text-align: left; }
   .FAQcontent ul li {

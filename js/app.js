@@ -188,6 +188,15 @@ var smSchedule = [
   }
 ];
 
+//config for twitter fetching
+var config1 = {
+  "id": '601122400374169600',
+  "domId": 'tweet',
+  "maxTweets": 4,
+  "enableLinks": true,
+  "showUser": false,
+};
+
 var teams = ["jcc", "lcac", "lt","sm"];
 var jccSlots=[];
 var lcacSlots=[];
@@ -282,3 +291,6 @@ createSlots(smSchedule,smSlots,"sm");
 
 addClick(scheduleButtons,appendSlots);
 addClick(faqButtons,displayAnswers);
+
+//pull tweets in
+twitterFetcher.fetch(config1);

@@ -270,7 +270,17 @@ function removeSlotsDiv (elementId) {
 function displayAnswers () {
 
 }
+var menuButton = document.getElementById("menuButton");
 
+function toggleActive (element){
+  console.log("test");
+  element.classList.toggle("menuActive");
+}
+
+
+function menuActive () {
+  menuButton.addEventListener("click",toggleActive(menuButton));
+}
 
 
 
@@ -280,5 +290,6 @@ createSlots(lcacSchedule,lcacSlots,"lcac");
 createSlots(ltSchedule,ltSlots,"lt");
 createSlots(smSchedule,smSlots,"sm");
 
+
+menuActive();
 addClick(scheduleButtons,appendSlots);
-//addClick(faqButtons,);

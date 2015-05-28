@@ -188,6 +188,15 @@ var smSchedule = [
   }
 ];
 
+//config for twitter fetching
+var config1 = {
+  "id": '601122400374169600',
+  "domId": 'tweet',
+  "maxTweets": 4,
+  "enableLinks": true,
+  "showUser": false,
+};
+
 var teams = ["jcc", "lcac", "lt","sm"];
 var jccSlots=[];
 var lcacSlots=[];
@@ -207,7 +216,6 @@ function createSlots(input,output,aclass) {
       slot.innerHTML = "<div class='grid-3'><h4>"+input[i]["date"]+"</h4></div><div class='grid-9'><h5>"+input[i]["opponent"]+"</h5><h6>"+input[i]["location"]+"</h6</div>";
 
       output.push(slot);
-      console.log(slot);
 
     }
 
@@ -268,7 +276,8 @@ function removeSlotsDiv (elementId) {
   }
 
 function displayAnswers () {
-
+  console.log(this.children[1]);
+  this.children[1].classList.toggle("visible");
 }
 var menuButton = document.getElementById("menuButton");
 
@@ -293,3 +302,7 @@ createSlots(smSchedule,smSlots,"sm");
 
 menuActive();
 addClick(scheduleButtons,appendSlots);
+addClick(faqButtons,displayAnswers);
+
+//pull tweets in
+twitterFetcher.fetch(config1);

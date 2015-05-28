@@ -29,6 +29,11 @@
   padding-top:50px;
   height: 1130px;
 
+
+  @media (max-width:320px) {
+    height:950px;
+  }
+
   h1 {
     color:white;
     margin-top: 0;
@@ -94,13 +99,22 @@
     margin: 2px 5px;
     border-right: 1px solid $textColor;
     opacity: .65;
+
+    @media (max-width:320px) {
+      font-size: 1.4rem;
+    }
+
   }
   h5 {
     color: $textColor;
     font-size: 1.4rem;
     font-weight: 100;
     margin: 10px 0px 0px;
-    opacity:.65
+    opacity:.65;
+
+    @media (max-width:320px) {
+      font-size: 1.1rem;
+    }
 
   }
   h6{
@@ -108,7 +122,12 @@
     font-size: 1.4rem;
     font-weight: 100;
     margin: 0px 0px;
-    opacity:.65
+    opacity:.65;
+
+    @media (max-width:320px) {
+      font-size: 1.1rem;
+    }
+
   }
 }
 
@@ -178,6 +197,8 @@
 	}
 	iframe	{
 		border-width: 0px;
+    width:95%;
+
 	}
 }
 
@@ -187,8 +208,8 @@
   width: 87%;
   margin: auto;
   border-radius: 5px;
-  min-height: 450px;
-  padding-top: 25px;
+  min-height: 415px;
+  padding-top: 5px;
 }
 
 
@@ -259,6 +280,7 @@
 
 }
 
+
 .tweet {
   background:$optionalColor;
   opacity:.85;
@@ -270,23 +292,58 @@
   border-radius:2px;
 
   p {
-    font-size: 1.5rem;
+
+    font-size: 1.2rem;
     font-weight:100;
     margin:0;
     opacity:.95;
 
+
+    @media (max-width:320px) {
+      font-size: 1.1rem;
+    }
+
   }
 }
 
+#tweet {
+li{
+  background:$optionalColor;
+  opacity:.85;
+  @include boxShadow(3);
+  min-height: 70px;
+  width: 90%;
+  margin-top: 45px;
+  padding: 20px 10px 0px;
+  border-radius:2px;
 
+  p {
+
+    font-size: 1.2rem;
+    font-weight:100;
+    margin:0;
+    opacity:.95;
+
+
+    @media (max-width:320px) {
+      font-size: 1.1rem;
+    }
+
+  }
+}
+
+}
 //FAQ Section-------------------------------->
 //------------------------------------------------>
 
 
 .FAQcontent {
   ul {
+    text-align: left;
     li{
       text-align: left;
+      color: $textColor;
+      font-size: 1rem;
     }
   }
 }
@@ -305,4 +362,8 @@
 .a {
   font-size:1.5rem;
   color: #2ecc71;
+}
+
+.visible {
+  display:none;
 }

@@ -136,7 +136,7 @@
 			<div class="twittercontent">
 				<h1>Recent Tweets</h1>
 				<ul class="tweets">
-					<li class="tweet"><p>"The season has officially begun!"</p></li>
+					<li class="tweet" id="tweet"><p>"The season has officially begun!"</p></li>
 					<li class="tweet"><p>"The season has officially begun!"</p></li>
 					<li class="tweet"><p>"The season has officially begun!"</p></li>
 				</ul>
@@ -149,13 +149,8 @@
 
 		</div>
 
+
+			<script type="text/javascript" src="js\vendors\Twitter-Post-Fetcher-master\js\twitterFetcher_min.js"></script>
 			<script type="text/javascript" src="js/app.js" ></script>
 	</body>
 </html>
-
-
-
-
-
-
-	

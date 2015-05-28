@@ -597,7 +597,7 @@ ul {
 .dateSlot {
   text-align: left;
   width: 90%;
-  margin: 15px auto;
+  margin: 28px auto;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
@@ -757,7 +757,7 @@ ul {
     opacity: .95; }
     @media (max-width: 320px) {
       #tweet li p {
-        font-size: 1.1rem; } }
+        font-size: 1.09rem; } }
   #tweet li a {
     background-color: transparent;
     font-size: .7rem;

@@ -264,13 +264,14 @@
 .twitter	{
 	background: url("../img/swimming.jpg") no-repeat;
   background-size: cover;
-  height: 800px;
+  background-attachment: fixed;
 }
 
 .twittercontent	{
 	background-color: rgba(48, 81, 129, 0.85);
 	width: 100%;
 	height: 100%;
+  padding-bottom: 60px;
 	color: $teamcolorTrans;
 
 	h1	{
@@ -280,42 +281,17 @@
 
 }
 
-
-.tweet {
-  background:$optionalColor;
-  opacity:.85;
-  @include boxShadow(3);
-  min-height: 70px;
-  width: 90%;
-  margin-top: 45px;
-  padding: 20px 10px 0px;
-  border-radius:2px;
-
-  p {
-
-    font-size: 1.2rem;
-    font-weight:100;
-    margin:0;
-    opacity:.95;
-
-
-    @media (max-width:320px) {
-      font-size: 1.1rem;
-    }
-
-  }
-}
-
 #tweet {
 li{
   background:$optionalColor;
   opacity:.85;
   @include boxShadow(3);
-  min-height: 70px;
+  min-height: 62px;
   width: 90%;
   margin-top: 45px;
-  padding: 20px 10px 0px;
+  padding: 5px 10px 0px;
   border-radius:2px;
+  text-align: left;
 
   p {
 
@@ -330,8 +306,27 @@ li{
     }
 
   }
+
+  a {
+    background-color: transparent;
+    font-size: .7rem;
+    text-decoration: none;
+    color: white;
+  }
 }
 
+}
+.timePosted {
+  float: left;
+    height: 17px;
+
+}
+.interact {
+  float: right;
+
+   a {
+     margin-left: 6px;
+   }
 }
 //FAQ Section-------------------------------->
 //------------------------------------------------>

@@ -279,7 +279,17 @@ function displayAnswers () {
   console.log(this.children[1]);
   this.children[1].classList.toggle("visible");
 }
+var menuButton = document.getElementById("menuButton");
 
+function toggleActive (element){
+  console.log("test");
+  element.classList.toggle("menuActive");
+}
+
+
+function menuActive () {
+  menuButton.addEventListener("click",toggleActive(menuButton));
+}
 
 
 
@@ -289,6 +299,8 @@ createSlots(lcacSchedule,lcacSlots,"lcac");
 createSlots(ltSchedule,ltSlots,"lt");
 createSlots(smSchedule,smSlots,"sm");
 
+
+menuActive();
 addClick(scheduleButtons,appendSlots);
 addClick(faqButtons,displayAnswers);
 

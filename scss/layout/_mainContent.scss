@@ -95,7 +95,7 @@
   h4 {
     color: $optionalColor;
     font-size: 1.8rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 2px 5px;
     border-right: 1px solid $textColor;
     opacity: .65;
@@ -108,7 +108,7 @@
   h5 {
     color: $textColor;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 10px 0px 0px;
     opacity:.65;
 
@@ -120,7 +120,7 @@
   h6{
     color:$secondaryColor;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0px 0px;
     opacity:.65;
 
@@ -330,7 +330,9 @@ li{
 }
 //FAQ Section-------------------------------->
 //------------------------------------------------>
-
+.FAQDiv {
+  margin-bottom: 25px;
+}
 
 .FAQcontent {
   ul {
@@ -361,4 +363,22 @@ li{
 
 .visible {
   display:none;
+}
+
+.askUsButton {
+  border-radius: 5px;
+  width:40%;
+  margin: auto;
+  @include boxShadow(3);
+  color: $optionalColor;
+  border: 3px solid $optionalColor;
+  background: white;
+
+  &:hover {
+    @include boxShadow(4);
+  }
+
+  p {
+    margin: 5px 0;
+  }
 }

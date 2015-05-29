@@ -243,7 +243,7 @@ function removeSlotsDiv (elementId) {
 //append elements to the DOM if button pressed
   //capture event on button
   function addClick (button,task) {
-    for(var i =0; i<scheduleButtons.length;i++) {
+    for(var i =0; i<button.length;i++) {
       button[i].onclick= task;
     }
   }
@@ -276,7 +276,6 @@ function removeSlotsDiv (elementId) {
   }
 
 function displayAnswers () {
-  console.log(this.children[1]);
   this.children[1].classList.toggle("visible");
 }
 var menuButton = document.getElementById("menuButton");

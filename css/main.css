@@ -363,6 +363,8 @@ html {
   overflow-x: hidden; }
 
 body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   color: #727272;
   font-size: 1em;
   text-align: center; }
@@ -394,6 +396,10 @@ li {
 ul {
   padding: 0;
   margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 .grid-container {
   padding: 0;
@@ -604,7 +610,7 @@ ul {
   .dateSlot h4 {
     color: #4A90E2;
     font-size: 1.8rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 2px 5px;
     border-right: 1px solid #727272;
     opacity: .65; }
@@ -614,7 +620,7 @@ ul {
   .dateSlot h5 {
     color: #727272;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 10px 0px 0px;
     opacity: .65; }
     @media (max-width: 320px) {
@@ -623,7 +629,7 @@ ul {
   .dateSlot h6 {
     color: #F14D61;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0px 0px;
     opacity: .65; }
     @media (max-width: 320px) {
@@ -773,6 +779,9 @@ ul {
   .interact a {
     margin-left: 6px; }
 
+.FAQDiv {
+  margin-bottom: 25px; }
+
 .FAQcontent ul {
   text-align: left; }
   .FAQcontent ul li {
@@ -797,6 +806,19 @@ ul {
 
 .visible {
   display: none; }
+
+.askUsButton {
+  border-radius: 5px;
+  width: 40%;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: #4A90E2;
+  border: 3px solid #4A90E2;
+  background: white; }
+  .askUsButton:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .askUsButton p {
+    margin: 5px 0; }
 
 footer {
   background: #F14D61;

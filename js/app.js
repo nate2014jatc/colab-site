@@ -248,9 +248,9 @@ function removeSlotsDiv (elementId) {
   //capture event on button
   function addClick (button,task) {
     for(var i =0; i<button.length;i++) {
-        button[i].onclick= task;
+      button[i].onclick= task;
+    }
   }
-}
 
   //insert new content
   function appendSlots (slotCat) {

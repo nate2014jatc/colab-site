@@ -363,6 +363,8 @@ html {
   overflow-x: hidden; }
 
 body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   color: #727272;
   font-size: 1em;
   text-align: center; }
@@ -394,6 +396,10 @@ li {
 ul {
   padding: 0;
   margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 .grid-container {
   padding: 0;
@@ -637,14 +643,14 @@ ul {
 .dateSlot {
   text-align: left;
   width: 90%;
-  margin: 15px auto;
+  margin: 28px auto;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
   .dateSlot h4 {
     color: #4A90E2;
     font-size: 1.8rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 2px 5px;
     border-right: 1px solid #727272;
     opacity: .65; }
@@ -654,7 +660,7 @@ ul {
   .dateSlot h5 {
     color: #727272;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 10px 0px 0px;
     opacity: .65; }
     @media (max-width: 320px) {
@@ -663,7 +669,7 @@ ul {
   .dateSlot h6 {
     color: #F14D61;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0px 0px;
     opacity: .65; }
     @media (max-width: 320px) {
@@ -768,44 +774,28 @@ ul {
 .twitter {
   background: url("../img/swimming.jpg") no-repeat;
   background-size: cover;
-  height: 800px; }
+  background-attachment: fixed; }
 
 .twittercontent {
   background-color: rgba(48, 81, 129, 0.85);
   width: 100%;
   height: 100%;
+  padding-bottom: 60px;
   color: rgba(255, 255, 255, 0.9); }
   .twittercontent h1 {
     margin: auto;
     padding-top: 50px; }
 
-.tweet {
-  background: #4A90E2;
-  opacity: .85;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  min-height: 70px;
-  width: 90%;
-  margin-top: 45px;
-  padding: 20px 10px 0px;
-  border-radius: 2px; }
-  .tweet p {
-    font-size: 1.2rem;
-    font-weight: 100;
-    margin: 0;
-    opacity: .95; }
-    @media (max-width: 320px) {
-      .tweet p {
-        font-size: 1.1rem; } }
-
 #tweet li {
   background: #4A90E2;
   opacity: .85;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  min-height: 70px;
+  min-height: 62px;
   width: 90%;
   margin-top: 45px;
-  padding: 20px 10px 0px;
-  border-radius: 2px; }
+  padding: 5px 10px 0px;
+  border-radius: 2px;
+  text-align: left; }
   #tweet li p {
     font-size: 1.2rem;
     font-weight: 100;
@@ -813,7 +803,24 @@ ul {
     opacity: .95; }
     @media (max-width: 320px) {
       #tweet li p {
-        font-size: 1.1rem; } }
+        font-size: 1.09rem; } }
+  #tweet li a {
+    background-color: transparent;
+    font-size: .7rem;
+    text-decoration: none;
+    color: white; }
+
+.timePosted {
+  float: left;
+  height: 17px; }
+
+.interact {
+  float: right; }
+  .interact a {
+    margin-left: 6px; }
+
+.FAQDiv {
+  margin-bottom: 25px; }
 
 .FAQcontent ul {
   text-align: left; }
@@ -839,6 +846,19 @@ ul {
 
 .visible {
   display: none; }
+
+.askUsButton {
+  border-radius: 5px;
+  width: 40%;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: #4A90E2;
+  border: 3px solid #4A90E2;
+  background: white; }
+  .askUsButton:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .askUsButton p {
+    margin: 5px 0; }
 
 footer {
   background: #F14D61;

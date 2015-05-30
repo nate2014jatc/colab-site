@@ -206,6 +206,10 @@ var scheduleButtons = document.getElementsByClassName('scheduleButton');
 var dateSectionContainer = document.getElementById('dateSlotsContainer');
 
 var faqButtons = document.getElementsByClassName('question');
+var menuButton = document.getElementsByClassName("menuButton");
+
+var menuSelections = document.getElementsByClassName("menuSelections");
+var cover = document.getElementsByClassName("cover");
 
 //CREATE ELEMENTS WITH OBJECT INFO and store in array
 
@@ -243,10 +247,10 @@ function removeSlotsDiv (elementId) {
 //append elements to the DOM if button pressed
   //capture event on button
   function addClick (button,task) {
-    for(var i =0; i<scheduleButtons.length;i++) {
-      button[i].onclick= task;
-    }
+    for(var i =0; i<button.length;i++) {
+        button[i].onclick= task;
   }
+}
 
   //insert new content
   function appendSlots (slotCat) {
@@ -276,20 +280,20 @@ function removeSlotsDiv (elementId) {
   }
 
 function displayAnswers () {
-  console.log(this.children[1]);
   this.children[1].classList.toggle("visible");
 }
-var menuButton = document.getElementById("menuButton");
 
-function toggleActive (element){
-  console.log("test");
-  element.classList.toggle("menuActive");
+
+
+
+function toggleActive (){
+  this.classList.toggle("menuActive");
+  menuSelections[0].classList.toggle("menuSelectionsHidden");
+  cover[0].classList.toggle("coverActive");
+
 }
 
 
-function menuActive () {
-  menuButton.addEventListener("click",toggleActive(menuButton));
-}
 
 
 
@@ -300,9 +304,9 @@ createSlots(ltSchedule,ltSlots,"lt");
 createSlots(smSchedule,smSlots,"sm");
 
 
-menuActive();
 addClick(scheduleButtons,appendSlots);
 addClick(faqButtons,displayAnswers);
+addClick(menuButton,toggleActive);
 
 //pull tweets in
 twitterFetcher.fetch(config1);

@@ -1,5 +1,21 @@
 
 
+.cover {
+  @include transition(all, 0.3s);
+  position: relative;
+  left: 0;
+  
+}
+.coverActive {
+  position: relative;
+  //background-color: white;
+  //opacity: 0.15;
+  z-index: 3;
+  left:-300px;
+  @include transition (all, 0.3s);
+}
+
+
 //Mission Section-------------------------------->
 //------------------------------------------------>
 

@@ -211,6 +211,8 @@ var menuButton = document.getElementsByClassName("menuButton");
 var menuSelections = document.getElementsByClassName("menuSelections");
 var cover = document.getElementsByClassName("cover");
 
+var menuSelections = document.getElementsByClassName("menuSelection");
+
 //CREATE ELEMENTS WITH OBJECT INFO and store in array
 
 function createSlots(input,output,aclass) {
@@ -286,13 +288,12 @@ function displayAnswers () {
 
 
 
-function toggleActive (){
-  this.classList.toggle("menuActive");
+function toggleMenu (){
+  menuButton[0].classList.toggle("menuActive");
   menuSelections[0].classList.toggle("menuSelectionsHidden");
   cover[0].classList.toggle("coverActive");
 
 }
-
 
 
 
@@ -306,7 +307,7 @@ createSlots(smSchedule,smSlots,"sm");
 
 addClick(scheduleButtons,appendSlots);
 addClick(faqButtons,displayAnswers);
-addClick(menuButton,toggleActive);
+addClick(menuButton,toggleMenu);
 
 //pull tweets in
 twitterFetcher.fetch(config1);

@@ -567,17 +567,23 @@ a {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   z-index: 10;
-  margin-top: 50px;
+  padding-top: 50px;
   overflow: hidden;
   background-color: #F14D61;
   color: white;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  .menuSelections img {
+    width: 115px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 60px; }
   .menuSelections ul {
     margin: 29px 15px;
-    font-size: 1.5rem;
+    font-size: 1.38rem;
     font-weight: 100; }
   .menuSelections li {
     text-align: left; }
+    .menuSelections li a {
+      font-weight: 100; }
 
 .menuSelectionsHidden {
   right: -300px; }

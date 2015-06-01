@@ -10,24 +10,24 @@
 
 	<body>
 
-			<div class="navDiv grid-container">
-				<button class="menuButton"><span class="spanMenuButton">MenuButton</span></button>
-
-				<div class="nav grid-12">
-					<img class="logo" src="img/logo.svg" alt="SLSL Logo">
-				</div>
-			</div>
 			<div class="menuSelections menuSelectionsHidden">
 				<ul>
-					<li class="missionSelection"><h3>Mission</h3></li>
-					<li class="teamsSelection"><h3>Teams</h3></li>
-					<li class="scheduleSelection"><h3>Schedule</h3></li>
-					<li class="mapSelection"><h3>Map</h3></li>
-					<li class="aboutSelection"><h3>About</h3></li>
-					<li class="recentTweetsSelection"><h3>RecentTweets</h3></li>
+					<li class="missionSelection"><h3><a href="#missionSelection">Mission</a></h3></li>
+					<li class="teamsSelection"><h3><a href ="#teamSelection">Teams</a></h3></li>
+					<li class="scheduleSelection"><h3><a href ="#scheduleSelection">Schedule</a></h3></li>
+					<li class="mapSelection"><h3><a href="#mapSelection">Map</a></h3></li>
+					<li class="aboutSelection"><h3><a href="#aboutSelection">About</a></h3></li>
+					<li class="recentTweetsSelection"><h3><a href="tweetSelection">RecentTweets</a></h3></li>
 					<li class="FAQSelection"><h3>FAQ</h3></li>
 					<li class="contactSelection"><h3>ContactUs</h3></li>
 			</ul>
+		</div>
+		<div class="navDiv grid-container">
+			<button class="menuButton"><span class="spanMenuButton">MenuButton</span></button>
+
+			<div class="nav grid-12">
+				<img class="logo" src="img/logo.svg" alt="SLSL Logo">
+			</div>
 		</div>
 		<div class="cover">
 		<div class="mainHeader" >
@@ -36,7 +36,7 @@
 				<h1>Salt Lake Swim League</h1>
 		</div>
 		<div class ="missionSection">
-				<h1>Our Mission</h1>
+				<h1 id="missionSelection">Our Mission</h1>
 				<div class="missionLine"></div>
 				<p>
 					It is the objective of the Salt Lake Swim League to offer an additional program for its member clubs to promote sustained memberships and offer an enhancement for the more full utilization of each member facility. It shall create an environment that is safe and fun for its participants by using competitive swimming as the vehicle where sportsmanship, swimming competency, and competition are experienced.

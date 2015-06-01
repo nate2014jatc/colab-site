@@ -504,7 +504,12 @@ a {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  -ms-appearance: none; }
+  -ms-appearance: none;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s; }
   .menuButton:focus {
     outline: none; }
   .menuButton span {
@@ -515,11 +520,11 @@ a {
     top: 22px;
     left: 9px;
     right: 9px;
-    transition: transform 0.3s;
-    -webkit-transition: transform 0.3s;
-    -ms-transition: transform 0.3s;
-    -moz-transition: transform 0.3s;
-    -o-transition: transform 0.3s; }
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s; }
     .menuButton span:before, .menuButton span:after {
       content: "";
       position: absolute;
@@ -564,8 +569,13 @@ a {
   z-index: 10;
   margin-top: 50px;
   overflow: hidden;
-  background-color: #305181;
-  color: white; }
+  background-color: #F14D61;
+  color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  .menuSelections ul {
+    margin: 29px 15px;
+    font-size: 1.5rem;
+    font-weight: 100; }
   .menuSelections li {
     text-align: left; }
 
@@ -573,6 +583,7 @@ a {
   right: -300px; }
 
 .cover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;

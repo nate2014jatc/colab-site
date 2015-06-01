@@ -1,10 +1,11 @@
 
 
 .cover {
+  @include boxShadow(3);
   @include transition(all, 0.3s);
   position: relative;
   left: 0;
-  
+
 }
 .coverActive {
   position: relative;

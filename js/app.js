@@ -211,7 +211,7 @@ var menuButton = document.getElementsByClassName("menuButton");
 var menuSelections = document.getElementsByClassName("menuSelections");
 var cover = document.getElementsByClassName("cover");
 
-var menuSelections = document.getElementsByClassName("menuSelection");
+var menuSelection = document.getElementsByClassName("menuSelection");
 
 //CREATE ELEMENTS WITH OBJECT INFO and store in array
 
@@ -308,6 +308,7 @@ createSlots(smSchedule,smSlots,"sm");
 addClick(scheduleButtons,appendSlots);
 addClick(faqButtons,displayAnswers);
 addClick(menuButton,toggleMenu);
+addClick(menuSelection, toggleMenu);
 
 //pull tweets in
 twitterFetcher.fetch(config1);

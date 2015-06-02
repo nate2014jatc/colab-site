@@ -4,6 +4,7 @@
 }
 
 .menuButton {
+  border: none;
   background: $secondaryColor;
   position: fixed;
   top:8px;
@@ -26,6 +27,15 @@
   -ms-appearance: none;
   @include transition (all, 0.2s);
 
+  @media (max-width:320px) {
+    left:83%;
+  }
+  @media (min-width:1024px) {
+    width: 75px;
+    height: 75px;
+    left:91.5%;
+  }
+
     &:focus {
       outline:none;
     }
@@ -40,6 +50,10 @@
       right: 9px;
       @include transition(all, 0.3s);
 
+      @media (min-width:1024px ) {
+        top: 35px;
+      }
+
       &:before, &:after {
         content: "";
         position:absolute;
@@ -53,11 +67,11 @@
       }
 
       &:before {
-        top:-10px;
+        top:-15px;
       }
 
       &:after {
-        bottom: -10px;
+        bottom: -15px;
       }
 
     }
@@ -88,6 +102,10 @@
 .logo {
   background-image: src("../img/logo.svg");
   width: 60px;
+
+  @media (min-width:1024px) {
+    width: 87px;
+  }
 }
 
 .menuSelections {
@@ -103,10 +121,18 @@
       color: white;
       @include boxShadow(5);
 
+      @media (min-width: 1024px) {
+        padding-top:95px;
+      }
+
       img {
         width: 115px;
         box-shadow: 0px 3px 6px rgba(0,0,0,0.23);
         border-radius: 60px;
+
+        @media (max-width: 320px) {
+          display: none;
+        }
 
       }
 
@@ -114,10 +140,18 @@
         margin: 29px 15px;
         font-size: 1.38rem;
         font-weight: 100;
+
+        @media (max-width: 320px) {
+          font-size: 1.1rem;
+        }
       }
 
       li {
         text-align: left;
+
+        &:hover {
+          color: $optionalColor;
+        }
 
 
         a {

@@ -341,10 +341,42 @@ li{
      margin-left: 6px;
    }
 }
+
+
+
+//gallery Section-------------------------------->
+//------------------------------------------------>
+
+
+  .gallery {
+    overflow: hidden;
+    ul {
+      position:relative;
+      left: 0;
+      overflow: hidden;
+
+      li {
+        position: relative;
+        left: 0;
+        max-width: 95%;
+        float: left;
+
+        img {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+
+
 //FAQ Section-------------------------------->
 //------------------------------------------------>
+
+
 .FAQDiv {
-  margin-bottom: 25px;
+  margin-bottom: 60px;
 }
 
 .FAQcontent {
@@ -394,4 +426,26 @@ li{
   p {
     margin: 5px 0;
   }
+}
+
+
+//Sponsor Section Section-------------------------------->
+//------------------------------------------------>
+
+.sponsors {
+  div {
+    text-indent: -9999px;
+    height:91px;
+    margin-bottom: 20px;
+  }
+}
+
+.hytek {
+  background: url("../img/Hytek.png") no-repeat center;
+  background-size:70%;
+}
+
+.aquaholics {
+  background: url("../img/Aquaholics.jpg") no-repeat center;
+  background-size: 65%;
 }

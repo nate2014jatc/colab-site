@@ -468,7 +468,7 @@ a {
   background: url("../img/slslswim.jpg") no-repeat center;
   background-size: cover;
   background-position-y: 7px;
-  height: 197px;
+  height: 250px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative;
   top: 54px;
@@ -476,7 +476,7 @@ a {
   @media (max-width: 320px) {
     .mainHeader {
       height: 180px; } }
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) {
     .mainHeader {
       height: 409px; } }
 
@@ -564,9 +564,15 @@ a {
       height: 4px;
       left: 0; }
     .menuButton span:before {
-      top: -15px; }
+      top: -10px; }
+      @media (min-width: 1024px) {
+        .menuButton span:before {
+          top: -15px; } }
     .menuButton span:after {
-      bottom: -15px; }
+      bottom: -10px; }
+      @media (min-width: 1024px) {
+        .menuButton span:after {
+          bottom: -15px; } }
 
 .menuActive span {
   transform: rotate(90deg);
@@ -876,8 +882,22 @@ a {
   .interact a {
     margin-left: 6px; }
 
+.gallery {
+  overflow: hidden; }
+  .gallery ul {
+    position: relative;
+    left: 0;
+    overflow: hidden; }
+    .gallery ul li {
+      position: relative;
+      left: 0;
+      max-width: 95%;
+      float: left; }
+      .gallery ul li img {
+        width: 100%; }
+
 .FAQDiv {
-  margin-bottom: 25px; }
+  margin-bottom: 60px; }
 
 .FAQcontent ul {
   text-align: left; }
@@ -916,6 +936,19 @@ a {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .askUsButton p {
     margin: 5px 0; }
+
+.sponsors div {
+  text-indent: -9999px;
+  height: 91px;
+  margin-bottom: 20px; }
+
+.hytek {
+  background: url("../img/Hytek.png") no-repeat center;
+  background-size: 70%; }
+
+.aquaholics {
+  background: url("../img/Aquaholics.jpg") no-repeat center;
+  background-size: 65%; }
 
 footer {
   background: #F14D61;

@@ -4,7 +4,7 @@
     background: url("../img/slslswim.jpg") no-repeat center;
     background-size: cover;
     background-position-y:7px;
-    height:197px;
+    height:250px;
     @include boxShadow(1);
     position: relative;
     top:  54px;
@@ -13,7 +13,7 @@
     @media (max-width:320px ) {
       height: 180px;
     }
-    @media (max-width:1024px ) {
+    @media (min-width:1024px ) {
       height: 409px;
     }
 }

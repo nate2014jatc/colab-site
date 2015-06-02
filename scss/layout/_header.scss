@@ -13,6 +13,9 @@
     @media (max-width:320px ) {
       height: 180px;
     }
+    @media (max-width:1024px ) {
+      height: 409px;
+    }
 }
 
 .titleBox {
@@ -22,6 +25,10 @@
   height: 73px;
   padding-top:16px;
 
+  @media (min-width: 1024px) {
+    height:100px;
+  }
+
   h1 {
     font-size:2.2rem;
     margin:0;
@@ -30,6 +37,13 @@
     @media (max-width:320px ) {
       font-size: 1.8rem;
     }
+    @media (max-width:360px ) {
+      font-size: 2rem;
+    }
+    @media (min-width: 1024px) {
+      font-size:4rem;
+    }
+
 
   }
 

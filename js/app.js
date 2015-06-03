@@ -236,7 +236,8 @@ function createSlots(input,output,aclass) {
 
 function newDateSection (slotsArray) {
   var newDateSection = document.createElement('div');
-  newDateSection.setAttribute("id","dateslots")
+  newDateSection.setAttribute("id","dateslots");
+  newDateSection.classList.add("group");
   for(var i = 0; i < slotsArray.length;i++) {
     newDateSection.appendChild(slotsArray[i]);
 

@@ -38,6 +38,53 @@
 }
 
 
+
+//Teams Section-------------------------------->
+//------------------------------------------------>
+.teams	{
+  background: $secondaryColor;
+    h1{
+      color: white;
+    }
+  div {
+	h1	{
+		color:#fff;
+		font-weight: light;
+		border-bottom:1px solid #fff;
+		width: 40%;
+		margin: auto;
+    padding-top:50px;
+    opacity:.85;
+	}
+	h3	{
+		font-size: 2rem;
+		text-align: left;
+		font-weight: lighter;
+		margin-left: 5%;
+	}
+	p	{
+		text-align: left;
+		color: #fff;
+		margin-top: -32px;
+		font-weight: 300;
+		margin-left: 6%;
+    margin-right: 9%;
+    margin-bottom:75px;
+    opacity: .85;
+
+    @media (min-width: 1024px) {
+      height: 168px;
+    }
+	}
+}
+
+.team {
+  @media (min-width:1024px) {
+      float:left;
+      width: 50%;
+  }
+}
+}
 //Schedule Section-------------------------------->
 //------------------------------------------------>
 
@@ -152,36 +199,7 @@
   margin-top:30px;
 }
 
-.teams	{
-  background: $secondaryColor;
 
-	h1	{
-		color:#fff;
-		font-weight: light;
-		border-bottom:1px solid #fff;
-		width: 40%;
-		margin: auto;
-    padding-top:50px;
-    opacity:.85;
-	}
-	h3	{
-		font-size: 2rem;
-		color: $teamcolor;
-		text-align: left;
-		font-weight: lighter;
-		margin-left: 5%;
-	}
-	p	{
-		text-align: left;
-		color: #fff;
-		margin-top: -32px;
-		font-weight: 300;
-		margin-left: 6%;
-    margin-right: 9%;
-    margin-bottom:75px;
-    opacity: .85;
-	}
-}
 
 .schedule	{
 	background-color: $accentColor;
@@ -285,7 +303,7 @@
 	width: 100%;
 	height: 100%;
   padding-bottom: 60px;
-	color: $teamcolorTrans;
+  color:white;
 
 	h1	{
 		margin: auto;

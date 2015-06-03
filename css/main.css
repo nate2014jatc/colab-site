@@ -407,6 +407,10 @@ a {
   text-decoration: none;
   color: inherit; }
 
+.group:before, .group:after {
+  content: "";
+  clear: both; }
+
 .grid-container {
   padding: 0;
   margin: 0; }
@@ -669,6 +673,40 @@ a {
   margin: auto;
   margin-top: -24px; }
 
+.teams {
+  background: #F14D61; }
+  .teams h1 {
+    color: white; }
+  .teams div h1 {
+    color: #fff;
+    font-weight: light;
+    border-bottom: 1px solid #fff;
+    width: 40%;
+    margin: auto;
+    padding-top: 50px;
+    opacity: .85; }
+  .teams div h3 {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 5%; }
+  .teams div p {
+    text-align: left;
+    color: #fff;
+    margin-top: -32px;
+    font-weight: 300;
+    margin-left: 6%;
+    margin-right: 9%;
+    margin-bottom: 75px;
+    opacity: .85; }
+    @media (min-width: 1024px) {
+      .teams div p {
+        height: 168px; } }
+  @media (min-width: 1024px) {
+    .teams .team {
+      float: left;
+      width: 50%; } }
+
 .scheduleSection {
   background: #D7DADB;
   padding-top: 50px;
@@ -746,32 +784,6 @@ a {
 .firstSlot {
   margin-top: 30px; }
 
-.teams {
-  background: #F14D61; }
-  .teams h1 {
-    color: #fff;
-    font-weight: light;
-    border-bottom: 1px solid #fff;
-    width: 40%;
-    margin: auto;
-    padding-top: 50px;
-    opacity: .85; }
-  .teams h3 {
-    font-size: 2rem;
-    color: #6E595C;
-    text-align: left;
-    font-weight: lighter;
-    margin-left: 5%; }
-  .teams p {
-    text-align: left;
-    color: #fff;
-    margin-top: -32px;
-    font-weight: 300;
-    margin-left: 6%;
-    margin-right: 9%;
-    margin-bottom: 75px;
-    opacity: .85; }
-
 .schedule {
   background-color: #D7DADB; }
   .schedule h1 {
@@ -844,7 +856,7 @@ a {
   width: 100%;
   height: 100%;
   padding-bottom: 60px;
-  color: rgba(255, 255, 255, 0.9); }
+  color: white; }
   .twittercontent h1 {
     margin: auto;
     padding-top: 50px; }

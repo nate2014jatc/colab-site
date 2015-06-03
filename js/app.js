@@ -197,6 +197,12 @@ var config1 = {
   "showUser": false,
 };
 
+var photos = [
+  "img/South Davis 1.jpg",
+  "img/South Davis 2.jpg",
+  "img/South Davis 3.jpg"
+];
+
 var teams = ["jcc", "lcac", "lt","sm"];
 var jccSlots=[];
 var lcacSlots=[];
@@ -212,6 +218,7 @@ var menuSelections = document.getElementsByClassName("menuSelections");
 var cover = document.getElementsByClassName("cover");
 
 var menuSelection = document.getElementsByClassName("menuSelection");
+var photoSlider = document.getElementById('photoSlider');
 
 //CREATE ELEMENTS WITH OBJECT INFO and store in array
 
@@ -295,6 +302,17 @@ function toggleMenu (){
 
 }
 
+var i = 0;
+function photoSliderFunction () {
+
+  photoSlider.setAttribute('src', photos[i]);
+
+  if(i<photos.length-1){
+    i++;
+  } else {i =0;}
+
+  setTimeout(photoSliderFunction,3000);
+}
 
 
 
@@ -312,3 +330,7 @@ addClick(menuSelection, toggleMenu);
 
 //pull tweets in
 twitterFetcher.fetch(config1);
+
+//photoSlider
+
+photoSliderFunction ();

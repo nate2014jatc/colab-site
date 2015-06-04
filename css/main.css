@@ -794,8 +794,8 @@ a {
 
 .map {
   background-color: #6DBCDB;
-  height: 660px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 100px; }
   .map h1 {
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -814,6 +814,10 @@ a {
   border-radius: 5px;
   min-height: 415px;
   padding-top: 5px; }
+  @media (min-width: 1024px) {
+    .mapDiv {
+      width: 75%;
+      min-height: 485px; } }
 
 .about {
   background-color: #fff;
@@ -944,15 +948,25 @@ a {
   color: #4A90E2;
   border: 3px solid #4A90E2;
   background: white; }
+  @media (min-width: 1024px) {
+    .askUsButton {
+      width: 25%;
+      height: 70px; } }
   .askUsButton:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .askUsButton p {
     margin: 5px 0; }
+    @media (min-width: 1024px) {
+      .askUsButton p {
+        margin: 19px; } }
 
 .sponsors div {
   text-indent: -9999px;
-  height: 91px;
+  min-height: 130px;
   margin-bottom: 20px; }
+  @media (min-width: 636px) {
+    .sponsors div {
+      min-height: 212px; } }
 
 .hytek {
   background: url("../img/Hytek.png") no-repeat center;

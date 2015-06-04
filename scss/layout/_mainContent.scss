@@ -218,8 +218,12 @@
 
 .map	{
 	background-color: $mainHeadingColor;
-  height: 660px;
   padding-top:50px;
+  padding-bottom:100px;
+
+  @media (min-width: 1024px) {
+
+  }
 	h1	{
 		color: #fff;
 		border-bottom: 1px solid #fff;
@@ -242,6 +246,11 @@
   border-radius: 5px;
   min-height: 415px;
   padding-top: 5px;
+
+  @media (min-width: 1024px) {
+    width: 75%;
+    min-height:485px;
+  }
 }
 
 
@@ -437,12 +446,21 @@ li{
   border: 3px solid $optionalColor;
   background: white;
 
+  @media (min-width: 1024px) {
+    width:25%;
+    height:70px;
+  }
+
   &:hover {
     @include boxShadow(4);
   }
 
   p {
     margin: 5px 0;
+
+    @media (min-width: 1024px) {
+      margin:19px;
+    }
   }
 }
 
@@ -453,8 +471,12 @@ li{
 .sponsors {
   div {
     text-indent: -9999px;
-    height:91px;
+    min-height:130px;
     margin-bottom: 20px;
+
+    @media (min-width: 636px) {
+      min-height: 212px;
+    }
   }
 }
 

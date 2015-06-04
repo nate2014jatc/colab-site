@@ -102,13 +102,17 @@
 
   h3 {
     margin:7px auto;
+
+    @media (min-width: 1024px) {
+      font-size: 1.7rem;
+    }
   }
 
 }
 
 
 .scheduleButton {
-  @include boxShadow(1);
+  @include boxShadow(2);
   color:$optionalColor;
   border:3px solid $optionalColor;
   border-radius:5px;
@@ -116,11 +120,23 @@
   margin-left:4%;
   width:20%;
   height: 40px;
+  @include transition(all, 0.3s);
+
+  @media (min-width: 1024px) {
+    height: 100%;
+    padding: 15px 0;
+  }
+
 
   &:hover {
-    @include boxShadow(3);
+    @include boxShadow(4);
     background: $optionalColor;
     color: $accentColor;
+  }
+
+  &:focus {
+    color: $accentColor;
+    background: $optionalColor;
   }
 
 }
@@ -151,6 +167,10 @@
       width: 46%;
       margin:2%;
   }
+  @media (min-width:1280px) {
+      width: 29%;
+      margin:2.1%;
+  }
 
 
   h4 {
@@ -165,10 +185,19 @@
       font-size: 1.4rem;
     }
 
+    @media (min-width:1280px) {
+      font-size: 1.5rem;
+      width: 70%;
+
+
+    }
+
+
+
   }
   h5 {
     color: $textColor;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin: 10px 0px 0px;
     opacity:.65;
@@ -176,17 +205,24 @@
     @media (max-width:320px) {
       font-size: 1.1rem;
     }
+    @media (min-width:1280px) {
+      font-size: 1.2rem;
+
+    }
 
   }
   h6{
     color:$secondaryColor;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin: 0px 0px;
     opacity:.65;
 
     @media (max-width:320px) {
       font-size: 1.1rem;
+    }
+    @media (min-width:1280px) {
+      font-size: 1.2rem;
     }
 
   }
@@ -345,6 +381,12 @@ li{
     width: 50%;
   }
 
+  @media (min-width: 1280px) {
+    width: 40%;
+    float: left;
+    margin: 35px 5%;
+  }
+
   p {
 
     font-size: 1.2rem;
@@ -361,7 +403,7 @@ li{
 
   a {
     background-color: transparent;
-    font-size: .7rem;
+    font-size: .9rem;
     text-decoration: none;
     color: white;
   }
@@ -388,10 +430,11 @@ li{
 
 
   .gallery {
-    background:$secondaryColor;
+    clear: both;
+    background:url('../img/underwatrer.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
-    padding-top: 50px;
-    padding-bottom:100px;
     h1 {
       color: white;
       margin: 0 auto 30px;
@@ -425,11 +468,39 @@ li{
     border-radius: 5px;
     margin: auto;
 
+
+
     @media (min-width: 1024px) {
       width:56%;
     }
+    @media (min-width: 1280px) {
+      width:45%;
+      margin: auto 20px;
+      &::after {
+        content:"Send us photos of your Swimmers to be featured here!";
+        color: white;
+        position: absolute;
+        left: 50%;
+        font-size: 3rem;
+        top: 5088px;
+
+
+
+
+      }
+    }
   }
 
+.galleryContainer {
+  background: $secondaryColor;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom:100px;
+  opacity: 0.70;
+  color: white;
+
+}
 
 
 //FAQ Section-------------------------------->
@@ -456,6 +527,8 @@ li{
     @media (min-width: 600px) {
       width:45%;
       float: left;
+      min-height:115px;
+      margin:auto 2.5%;
     }
     li{
       text-align: left;

@@ -720,20 +720,35 @@ a {
     margin-top: 0; }
   .scheduleSection h3 {
     margin: 7px auto; }
+    @media (min-width: 1024px) {
+      .scheduleSection h3 {
+        font-size: 1.7rem; } }
 
 .scheduleButton {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   color: #4A90E2;
   border: 3px solid #4A90E2;
   border-radius: 5px;
   margin-top: 12px;
   margin-left: 4%;
   width: 20%;
-  height: 40px; }
+  height: 40px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s; }
+  @media (min-width: 1024px) {
+    .scheduleButton {
+      height: 100%;
+      padding: 15px 0; } }
   .scheduleButton:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background: #4A90E2;
     color: #D7DADB; }
+  .scheduleButton:focus {
+    color: #D7DADB;
+    background: #4A90E2; }
 
 .scheduleButtons > [class^="grid-"] {
   margin-left: 4%; }
@@ -752,6 +767,10 @@ a {
       float: left;
       width: 46%;
       margin: 2%; } }
+  @media (min-width: 1280px) {
+    .dateSlot {
+      width: 29%;
+      margin: 2.1%; } }
   .dateSlot h4 {
     color: #4A90E2;
     font-size: 1.8rem;
@@ -762,24 +781,34 @@ a {
     @media (max-width: 320px) {
       .dateSlot h4 {
         font-size: 1.4rem; } }
+    @media (min-width: 1280px) {
+      .dateSlot h4 {
+        font-size: 1.5rem;
+        width: 70%; } }
   .dateSlot h5 {
     color: #727272;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin: 10px 0px 0px;
     opacity: .65; }
     @media (max-width: 320px) {
       .dateSlot h5 {
         font-size: 1.1rem; } }
+    @media (min-width: 1280px) {
+      .dateSlot h5 {
+        font-size: 1.2rem; } }
   .dateSlot h6 {
     color: #F14D61;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin: 0px 0px;
     opacity: .65; }
     @media (max-width: 320px) {
       .dateSlot h6 {
         font-size: 1.1rem; } }
+    @media (min-width: 1280px) {
+      .dateSlot h6 {
+        font-size: 1.2rem; } }
 
 .firstSlot {
   margin-top: 30px; }
@@ -885,6 +914,11 @@ a {
   @media (min-width: 600px) {
     #tweet li {
       width: 50%; } }
+  @media (min-width: 1280px) {
+    #tweet li {
+      width: 40%;
+      float: left;
+      margin: 35px 5%; } }
   #tweet li p {
     font-size: 1.2rem;
     font-weight: 100;
@@ -895,7 +929,7 @@ a {
         font-size: 1.09rem; } }
   #tweet li a {
     background-color: transparent;
-    font-size: .7rem;
+    font-size: .9rem;
     text-decoration: none;
     color: white; }
 
@@ -909,10 +943,11 @@ a {
     margin-left: 6px; }
 
 .gallery {
-  background: #F14D61;
-  overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 100px; }
+  clear: both;
+  background: url("../img/underwatrer.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden; }
   .gallery h1 {
     color: white;
     margin: 0 auto 30px; }
@@ -940,6 +975,26 @@ a {
   @media (min-width: 1024px) {
     .galleryWrapper {
       width: 56%; } }
+  @media (min-width: 1280px) {
+    .galleryWrapper {
+      width: 45%;
+      margin: auto 20px; }
+      .galleryWrapper::after {
+        content: "Send us photos of your Swimmers to be featured here!";
+        color: white;
+        position: absolute;
+        left: 50%;
+        font-size: 3rem;
+        top: 5088px; } }
+
+.galleryContainer {
+  background: #F14D61;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  opacity: 0.70;
+  color: white; }
 
 .FAQDiv {
   margin-bottom: 60px; }
@@ -960,7 +1015,9 @@ a {
   @media (min-width: 600px) {
     .FAQcontent ul {
       width: 45%;
-      float: left; } }
+      float: left;
+      min-height: 115px;
+      margin: auto 2.5%; } }
   .FAQcontent ul li {
     text-align: left;
     color: #727272;

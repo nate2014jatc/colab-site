@@ -59,8 +59,13 @@
 	h3	{
 		font-size: 2rem;
 		text-align: left;
-		font-weight: lighter;
+		font-weight: 400;
 		margin-left: 5%;
+    opacity: 0.85;
+
+    @media (min-width:1024px) {
+        font-size: 2.5rem;
+    }
 	}
 	p	{
 		text-align: left;
@@ -72,9 +77,6 @@
     margin-bottom:75px;
     opacity: .85;
 
-    @media (min-width: 1024px) {
-      height: 168px;
-    }
 	}
 }
 
@@ -96,6 +98,10 @@
 
   @media (max-width:320px) {
     height:950px;
+  }
+
+  @media (min-width:1024px) {
+      height: 100%;
   }
 
   h1 {
@@ -155,6 +161,12 @@
   border-radius: 5px;
   @include boxShadow(3);
 
+  @media (min-width:1024px) {
+      float:left;
+      width: 46%;
+      margin:2%;
+  }
+
 
   h4 {
     color: $optionalColor;
@@ -197,6 +209,10 @@
 
 .firstSlot {
   margin-top:30px;
+
+  @media (min-width:1024px) {
+      margin-top:2%;
+  }
 }
 
 
@@ -376,7 +392,12 @@ li{
 
 
   .gallery {
+    background:$secondaryColor;
     overflow: hidden;
+    margin-bottom:50px;
+    h1 {
+      color: white;
+    }
     ul {
       position:relative;
       left: 0;
@@ -385,15 +406,27 @@ li{
       li {
         position: relative;
         left: 0;
-        max-width: 95%;
+        width: 97%;
+        margin:1.5%;
         float: left;
 
         img {
           width: 100%;
+          @include boxShadow(1);
+          border-radius:5px;
         }
 
       }
     }
+  }
+
+  .galleryWrapper {
+    background: $primaryColor;
+    width: 95%;
+    @include boxShadow(2);
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 50px;
   }
 
 

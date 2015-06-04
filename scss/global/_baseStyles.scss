@@ -46,7 +46,7 @@ h1 {
     font-size: 3rem;
   }
   @media (min-width: 1024px) {
-    font-size:5rem;
+    font-size:4.5rem;
   }
 
 }
@@ -63,6 +63,10 @@ p {
   opacity:.85;
   line-height: 1.5;
   letter-spacing: .03em;
+
+  @media (min-width: 1024px) {
+    font-size:1.3rem;
+  }
 }
 
 li {

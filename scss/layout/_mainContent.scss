@@ -21,7 +21,10 @@
 //------------------------------------------------>
 
 .missionSection {
+  padding-top: 50px;
+  padding-bottom: 100px;
   h1 {
+    margin: 0 auto 10px;
     color:$mainHeadingColor;
   }
 
@@ -30,12 +33,6 @@
   }
 }
 
-.missionLine {
-  border-bottom:1px solid $textColor;
-  width: 73%;
-  margin: auto;
-  margin-top: -24px;
-}
 
 
 
@@ -43,8 +40,10 @@
 //------------------------------------------------>
 .teams	{
   background: $secondaryColor;
+  padding-top: 50px;
     h1{
       color: white;
+      margin: 0 auto 10px;
     }
   div {
 	h1	{
@@ -93,16 +92,8 @@
 .scheduleSection {
   background: $accentColor;
   padding-top:50px;
-  height: 1130px;
-
-
-  @media (max-width:320px) {
-    height:950px;
-  }
-
-  @media (min-width:1024px) {
-      height: 100%;
-  }
+  height: 100%;
+  padding-bottom: 100px;
 
   h1 {
     color:white;
@@ -115,12 +106,6 @@
 
 }
 
-.scheduleLine {
-  border-bottom:1px solid $optionalColor;
-  width: 73%;
-  margin: auto;
-  margin-top: -24px;
-}
 
 .scheduleButton {
   @include boxShadow(1);
@@ -159,7 +144,7 @@
   margin: 28px auto;
   background: #fff;
   border-radius: 5px;
-  @include boxShadow(3);
+  @include boxShadow(2);
 
   @media (min-width:1024px) {
       float:left;
@@ -242,14 +227,18 @@
   }
 	h1	{
 		color: #fff;
-		border-bottom: 1px solid #fff;
-		width: 40%;
 		margin: auto;
     margin-bottom:25px;
 	}
 	iframe	{
 		border-width: 0px;
     width:95%;
+
+    @media (min-width: 1024px) {
+      width: 96%;
+      height: 457px;
+
+    }
 
 	}
 }
@@ -266,6 +255,7 @@
   @media (min-width: 1024px) {
     width: 75%;
     min-height:485px;
+    padding-top: 11px;
   }
 }
 
@@ -283,8 +273,6 @@
   }
 	h1	{
 		color: $mainHeadingColor;
-		border-bottom: 1px solid $textColor;
-		width: 56%;
 		margin: auto;
     margin-bottom: 25px;
 
@@ -321,13 +309,17 @@
 	background: url("../img/swimming.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+  @media (min-width: 1024px) {
+    background-position-y: -300px;
+  }
 }
 
 .twittercontent	{
 	background-color: rgba(48, 81, 129, 0.85);
 	width: 100%;
 	height: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   color:white;
 
 	h1	{
@@ -348,6 +340,10 @@ li{
   padding: 5px 10px 0px;
   border-radius:2px;
   text-align: left;
+
+  @media (min-width: 600px) {
+    width: 50%;
+  }
 
   p {
 
@@ -394,9 +390,11 @@ li{
   .gallery {
     background:$secondaryColor;
     overflow: hidden;
-    margin-bottom:50px;
+    padding-top: 50px;
+    padding-bottom:100px;
     h1 {
       color: white;
+      margin: 0 auto 30px;
     }
     ul {
       position:relative;
@@ -426,7 +424,10 @@ li{
     @include boxShadow(2);
     border-radius: 5px;
     margin: auto;
-    margin-bottom: 50px;
+
+    @media (min-width: 1024px) {
+      width:56%;
+    }
   }
 
 
@@ -442,6 +443,20 @@ li{
 .FAQcontent {
   ul {
     text-align: left;
+    @include boxShadow(2);
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    @include transition(all,0.3s);
+
+    &:hover {
+      @include boxShadow(4);
+    }
+
+    @media (min-width: 600px) {
+      width:45%;
+      float: left;
+    }
     li{
       text-align: left;
       color: $textColor;
@@ -473,7 +488,7 @@ li{
 .askUsButton {
   border-radius: 5px;
   width:40%;
-  margin: auto;
+  margin: 55px auto 0;
   @include boxShadow(3);
   color: $optionalColor;
   border: 3px solid $optionalColor;
@@ -502,6 +517,10 @@ li{
 //------------------------------------------------>
 
 .sponsors {
+  padding-top:50px;
+  h1 {
+    margin:0px auto 10px ;
+  }
   div {
     text-indent: -9999px;
     min-height:130px;
@@ -521,4 +540,11 @@ li{
 .aquaholics {
   background: url("../img/Aquaholics.jpg") no-repeat center;
   background-size: 65%;
+}
+
+.sponsor {
+  @media (min-width: 600px) {
+    float:left;
+    width: 50%;
+  }
 }

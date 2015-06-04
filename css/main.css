@@ -511,7 +511,7 @@ a {
 
 .menuButton {
   border: none;
-  background: #F14D61;
+  background: #305181;
   position: fixed;
   top: 8px;
   left: 85%;
@@ -519,7 +519,6 @@ a {
   text-indent: -9999px;
   width: 48px;
   height: 48px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: none;
   border-radius: none;
   overflow: hidden;
@@ -549,7 +548,7 @@ a {
   .menuButton span {
     display: block;
     background: white;
-    height: 4px;
+    height: 2px;
     position: absolute;
     top: 22px;
     left: 9px;
@@ -568,7 +567,7 @@ a {
       display: block;
       background-color: white;
       width: 100%;
-      height: 4px;
+      height: 2px;
       left: 0; }
     .menuButton span:before {
       top: -10px; }
@@ -665,21 +664,21 @@ a {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s; }
 
-.missionSection h1 {
-  color: #6DBCDB; }
-.missionSection p {
-  padding: 0 30px; }
-
-.missionLine {
-  border-bottom: 1px solid #727272;
-  width: 73%;
-  margin: auto;
-  margin-top: -24px; }
+.missionSection {
+  padding-top: 50px;
+  padding-bottom: 100px; }
+  .missionSection h1 {
+    margin: 0 auto 10px;
+    color: #6DBCDB; }
+  .missionSection p {
+    padding: 0 30px; }
 
 .teams {
-  background: #F14D61; }
+  background: #F14D61;
+  padding-top: 50px; }
   .teams h1 {
-    color: white; }
+    color: white;
+    margin: 0 auto 10px; }
   .teams div h1 {
     color: #fff;
     font-weight: light;
@@ -714,24 +713,13 @@ a {
 .scheduleSection {
   background: #D7DADB;
   padding-top: 50px;
-  height: 1130px; }
-  @media (max-width: 320px) {
-    .scheduleSection {
-      height: 950px; } }
-  @media (min-width: 1024px) {
-    .scheduleSection {
-      height: 100%; } }
+  height: 100%;
+  padding-bottom: 100px; }
   .scheduleSection h1 {
     color: white;
     margin-top: 0; }
   .scheduleSection h3 {
     margin: 7px auto; }
-
-.scheduleLine {
-  border-bottom: 1px solid #4A90E2;
-  width: 73%;
-  margin: auto;
-  margin-top: -24px; }
 
 .scheduleButton {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -758,7 +746,7 @@ a {
   margin: 28px auto;
   background: #fff;
   border-radius: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   @media (min-width: 1024px) {
     .dateSlot {
       float: left;
@@ -813,13 +801,15 @@ a {
   padding-bottom: 100px; }
   .map h1 {
     color: #fff;
-    border-bottom: 1px solid #fff;
-    width: 40%;
     margin: auto;
     margin-bottom: 25px; }
   .map iframe {
     border-width: 0px;
     width: 95%; }
+    @media (min-width: 1024px) {
+      .map iframe {
+        width: 96%;
+        height: 457px; } }
 
 .mapDiv {
   background: #fff;
@@ -832,7 +822,8 @@ a {
   @media (min-width: 1024px) {
     .mapDiv {
       width: 75%;
-      min-height: 485px; } }
+      min-height: 485px;
+      padding-top: 11px; } }
 
 .about {
   background-color: #fff;
@@ -841,8 +832,6 @@ a {
     margin-bottom: 100px; }
   .about h1 {
     color: #6DBCDB;
-    border-bottom: 1px solid #727272;
-    width: 56%;
     margin: auto;
     margin-bottom: 25px; }
   .about img {
@@ -869,12 +858,15 @@ a {
   background: url("../img/swimming.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed; }
+  @media (min-width: 1024px) {
+    .twitter {
+      background-position-y: -300px; } }
 
 .twittercontent {
   background-color: rgba(48, 81, 129, 0.85);
   width: 100%;
   height: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   color: white; }
   .twittercontent h1 {
     margin: auto;
@@ -890,6 +882,9 @@ a {
   padding: 5px 10px 0px;
   border-radius: 2px;
   text-align: left; }
+  @media (min-width: 600px) {
+    #tweet li {
+      width: 50%; } }
   #tweet li p {
     font-size: 1.2rem;
     font-weight: 100;
@@ -916,9 +911,11 @@ a {
 .gallery {
   background: #F14D61;
   overflow: hidden;
-  margin-bottom: 50px; }
+  padding-top: 50px;
+  padding-bottom: 100px; }
   .gallery h1 {
-    color: white; }
+    color: white;
+    margin: 0 auto 30px; }
   .gallery ul {
     position: relative;
     left: 0;
@@ -939,14 +936,31 @@ a {
   width: 95%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 5px;
-  margin: auto;
-  margin-bottom: 50px; }
+  margin: auto; }
+  @media (min-width: 1024px) {
+    .galleryWrapper {
+      width: 56%; } }
 
 .FAQDiv {
   margin-bottom: 60px; }
 
 .FAQcontent ul {
-  text-align: left; }
+  text-align: left;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s; }
+  .FAQcontent ul:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  @media (min-width: 600px) {
+    .FAQcontent ul {
+      width: 45%;
+      float: left; } }
   .FAQcontent ul li {
     text-align: left;
     color: #727272;
@@ -973,7 +987,7 @@ a {
 .askUsButton {
   border-radius: 5px;
   width: 40%;
-  margin: auto;
+  margin: 55px auto 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: #4A90E2;
   border: 3px solid #4A90E2;
@@ -990,13 +1004,17 @@ a {
       .askUsButton p {
         margin: 19px; } }
 
-.sponsors div {
-  text-indent: -9999px;
-  min-height: 130px;
-  margin-bottom: 20px; }
-  @media (min-width: 636px) {
-    .sponsors div {
-      min-height: 212px; } }
+.sponsors {
+  padding-top: 50px; }
+  .sponsors h1 {
+    margin: 0px auto 10px; }
+  .sponsors div {
+    text-indent: -9999px;
+    min-height: 130px;
+    margin-bottom: 20px; }
+    @media (min-width: 636px) {
+      .sponsors div {
+        min-height: 212px; } }
 
 .hytek {
   background: url("../img/Hytek.png") no-repeat center;
@@ -1005,6 +1023,11 @@ a {
 .aquaholics {
   background: url("../img/Aquaholics.jpg") no-repeat center;
   background-size: 65%; }
+
+@media (min-width: 600px) {
+  .sponsor {
+    float: left;
+    width: 50%; } }
 
 footer {
   background: #F14D61;

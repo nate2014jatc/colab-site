@@ -1,5 +1,4 @@
 
-
 .cover {
   @include boxShadow(3);
   @include transition(all, 0.3s);
@@ -92,7 +91,6 @@
 .scheduleSection {
   background: $accentColor;
   padding-top:50px;
-  height: 100%;
   padding-bottom: 100px;
 
   h1 {
@@ -111,7 +109,7 @@
 }
 
 .scheduleButtons {
-  @media (min-width: 1280px) {
+  @media (min-width: 1024px) {
     padding-left: 24%;
   }
 }
@@ -124,15 +122,10 @@
   margin-top:12px;
   margin-left:4%;
   width:20%;
-  height: 40px;
   @include transition(all, 0.3s);
 
-  @media (min-width: 1024px) {
-    height: 100%;
-    padding: 15px 0;
-  }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1024px) {
     width: 12%;
     padding: 5px;
   }
@@ -162,7 +155,9 @@
   }
 }
 
-
+#dateslots {
+  margin-top: 20px;
+}
 
 .dateSlot {
   text-align: left;
@@ -178,8 +173,8 @@
       margin:2%;
   }
   @media (min-width:1280px) {
-      width: 29%;
-      margin:2.1%;
+      width: 30%;
+      margin:1.6%;
   }
 
 
@@ -243,6 +238,9 @@
 
   @media (min-width:1024px) {
       margin-top:2%;
+  }
+  @media (min-width:1280px) {
+      margin-top:1.6%;
   }
 }
 
@@ -496,7 +494,7 @@ li{
         position: absolute;
         left: 50%;
         font-size: 3rem;
-        top: 5088px;
+        top: 3910px;
 
 
 
@@ -547,7 +545,7 @@ li{
       width:45%;
       float: left;
       min-height:115px;
-      margin:auto 2.5%;
+      margin:18px 2.5%;
     }
     li{
       text-align: left;
@@ -587,7 +585,7 @@ li{
   background: white;
 
   @media (min-width: 1024px) {
-    width:25%;
+    width:16%;
     height:70px;
   }
 

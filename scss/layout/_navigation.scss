@@ -97,22 +97,35 @@
 }
 }
 
-.nav{
+.navDiv{
   background:$primaryColor;
   @include boxShadow(2);
   position:fixed;
   z-index:19;
   text-align:left;
+  width: 100%;
+  text-indent: -9999px;
+  height:62px;
+
+  @media (min-width:1024px) {
+    height: 90px;
+
+  }
 
 }
 
 
 .logo {
-  background-image: src("../img/logo.svg");
+  position: fixed;
+  z-index: 20;
+  top:0;
+  left:.5%;
   width: 60px;
 
   @media (min-width:1024px) {
-    width: 87px;
+    top:4px;
+    width: 127px;
+    left: 1%;
   }
 }
 

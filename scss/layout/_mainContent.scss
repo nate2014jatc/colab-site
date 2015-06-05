@@ -110,6 +110,11 @@
 
 }
 
+.scheduleButtons {
+  @media (min-width: 1280px) {
+    padding-left: 24%;
+  }
+}
 
 .scheduleButton {
   @include boxShadow(2);
@@ -125,6 +130,11 @@
   @media (min-width: 1024px) {
     height: 100%;
     padding: 15px 0;
+  }
+
+  @media (min-width: 1280px) {
+    width: 12%;
+    padding: 5px;
   }
 
 
@@ -344,10 +354,11 @@
 .twitter	{
 	background: url("../img/swimming.jpg") no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+
 
   @media (min-width: 1024px) {
     background-position-y: -300px;
+    background-attachment: fixed;
   }
 }
 
@@ -433,8 +444,11 @@ li{
     clear: both;
     background:url('../img/underwatrer.jpg') no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     overflow: hidden;
+
+    @media (min-width:1024px) {
+      background-attachment: fixed;
+    }
     h1 {
       color: white;
       margin: 0 auto 30px;

@@ -198,9 +198,9 @@ var config1 = {
 };
 
 var photos = [
-  "img/South Davis 1.jpg",
-  "img/South Davis 2.jpg",
-  "img/South Davis 3.jpg"
+  ["img/South Davis 1.jpg","Championship Meet Location(South Davis1)"],
+  ["img/South Davis 2.jpg","Championship Meet Location(South Davis2)"],
+  ["img/South Davis 3.jpg","Championship Meet Location(South Davis3)"]
 ];
 
 var teams = ["jcc", "lcac", "lt","sm"];
@@ -219,6 +219,7 @@ var cover = document.getElementsByClassName("cover");
 
 var menuSelection = document.getElementsByClassName("menuSelection");
 var photoSlider = document.getElementById('photoSlider');
+var photoSliderText = document.getElementById('photoSliderText');
 
 //CREATE ELEMENTS WITH OBJECT INFO and store in array
 
@@ -306,7 +307,8 @@ function toggleMenu (){
 var i = 0;
 function photoSliderFunction () {
 
-  photoSlider.setAttribute('src', photos[i]);
+  photoSlider.setAttribute('src', photos[i][0]);
+  photoSliderText.innerHTML = photos[i][1];
 
   if(i<photos.length-1){
     i++;

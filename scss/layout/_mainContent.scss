@@ -126,13 +126,10 @@
   height: 40px;
   @include transition(all, 0.3s);
 
-  @media (min-width: 1024px) {
-    height: 100%;
-    padding: 15px 0;
-  }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1024px) {
     width: 12%;
+    height: 100%;
     padding: 5px;
   }
 

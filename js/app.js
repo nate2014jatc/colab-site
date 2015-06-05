@@ -198,9 +198,9 @@ var config1 = {
 };
 
 var photos = [
-  "img/South Davis 1.jpg",
-  "img/South Davis 2.jpg",
-  "img/South Davis 3.jpg"
+  "img/SouthDavis1.jpg",
+  "img/SouthDavis2.jpg",
+  "img/SouthDavis3.jpg"
 ];
 
 var teams = ["jcc", "lcac", "lt","sm"];

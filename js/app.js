@@ -198,9 +198,12 @@ var config1 = {
 };
 
 var photos = [
-  ["img/SouthDavis1.jpg","Championship Meet Location(South Davis1)"],
-  ["img/SouthDavis2.jpg","Championship Meet Location(South Davis2)"],
-  ["img/SouthDavis3.jpg","Championship Meet Location(South Davis3)"]
+  ["img/lifecentre.jpeg","Life Centre"],
+  ["img/sportsmall.jpeg","Sports Mall"],
+  ["img/jcc.jpeg","JCC"],
+  ["img/lifetime.jpeg","Life Time"],
+  ["img/SouthDavis2.jpg","South Davis (Championship Meet)"]
+
 ];
 
 var teams = ["jcc", "lcac", "lt","sm"];
